@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Game — Play Your Color
+    </title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+
+
+<body class="game-page">
+    <!-- Navigation -->
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="index.html" class="site-logo">
+                PLAY YOUR COLOR
+            </a>
+            <a href="result.html" class="header-link">
+                Your Results
+            </a>
+        </div>
+    </header>
+
+
+    <!-- Game Hero -->
+    <main class="game-detail">
+
+        <!-- Hero -->
+        <section class="game-hero">
+            <div class="game-hero-visual" id="gameHeroVisual">
+            <div class="game-hero-overlay"></div>
+            <div class="game-initial" id="gameInitial">
+                G
+            </div>
+            </div>
+
+            <div class="game-hero-content">
+            <div class="game-tier" id="gameTier">
+                YOUR BEST MATCH
+            </div>
+            <h1 id="gameTitle">
+                Loading game…
+            </h1>
+            <div class="game-match-row">
+                <div class="game-match" id="gameMatch">
+                94%
+                </div>
+                <div class="game-match-label" id="gameMatchLabel">
+                Match
+                </div>
+
+            </div>
+            <div class="game-genres" id="gameGenres">
+                RPG · Action · Open World
+            </div>
+            <p class="game-description" id="gameDescription">
+            </p>
+            </div>
+        </section>
+
+
+        <!-- Why this game -->
+        <section class="game-section">
+            <div class="section-heading">
+            <span class="section-eyebrow">
+                THE CONNECTION
+            </span>
+            <h2>
+                Why This Game
+            </h2>
+            </div>
+            <div class="game-why" id="gameWhy"></div>
+        </section>
+
+        <section class="game-section">
+            <div class="section-heading">
+                <span class="section-eyebrow">
+                    THE COMPARISON
+                </span>
+                <h2>
+                    Your DNA vs This Game
+                </h2>
+                <p class="section-description">
+                    See where your natural gaming preferences
+                    overlap with this game's design.
+                </p>
+            </div>
+            <div id="dnaHighlight" class="dna-highlight-container"></div>
+            <div id="dnaSimilarity" class="dna-similarity"></div>
+            <div id="dnaComparison" class="dna-comparison"></div>
+        </section>
+
+        <!-- Match breakdown -->
+        <section class="game-section">
+            <div class="section-heading">
+            <span class="section-eyebrow">
+                YOUR MATCH
+            </span>
+            <h2>
+                Match Breakdown
+            </h2>
+            </div>
+            <div class="game-breakdown" id="gameBreakdown"></div>
+        </section>
+
+        <!-- Game profile -->
+        <section class="game-section">
+            <div class="section-heading">
+            <span class="section-eyebrow">
+                GAME DNA
+            </span>
+            <h2>
+                Game Profile
+            </h2>
+            </div>
+            <div class="game-profile-grid" id="gameProfile"></div>
+        </section>
+
+        <!-- Friction -->
+        <section class="game-section friction-section" id="frictionSection">
+            <div class="section-heading">
+            <span class="section-eyebrow">
+                BEFORE YOU PLAY
+            </span>
+            <h2>
+                One Thing to Know
+            </h2>
+            </div>
+            <div class="game-friction" id="gameFriction"></div>
+        </section>
+    </main>
+
+
+    <!-- Scripts -->
+    <script src="js/colors.js"></script>
+    
+    <script src="js/game-rubric.js"></script>
+    <script src="js/game-profile.js"></script>
+    <script src="js/games-loader.js"></script>
+    
+    <script src="js/preference-engine.js"></script>
+    <script src="js/constraint-engine.js"></script>
+    <script src="js/recommendation-engine.js"></script>
+    <script src="js/ranking-engine.js"></script>
+    
+    <script src="js/explanation-engine.js"></script>
+    
+    <script src="js/format-utils.js"></script>
+
+    <script src="js/dna-utils.js"></script>
+    <script src="js/game.js"></script>
+
+</body>
+
+</html>

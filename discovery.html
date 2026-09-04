@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Discover Games — Play Your Color</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/discovery.css">
+</head>
+
+<body>
+
+  <header class="discovery-header">
+    <a href="index.html" class="brand">
+      PLAY YOUR COLOR
+    </a>
+    <a href="result.html" class="results-link">
+      YOUR RESULTS →
+    </a>
+  </header>
+
+
+  <main class="discovery-page">
+    <section class="discovery-intro">
+      <span class="section-eyebrow">
+        GAME DISCOVERY
+      </span>
+      <h1>
+        Find your next game.
+      </h1>
+      <p>
+        Explore games by the things you actually care about.
+      </p>
+    </section>
+
+
+    <section class="discovery-layout">
+      <!-- Filters -->
+      <aside class="filter-panel">
+        <div class="filter-header">
+          <h2>Filters</h2>
+          <button id="clearFilters" class="clear-filters">
+            Clear
+          </button>
+        </div>
+        <div id="filterGroups" class="filter-groups"></div>
+      </aside>
+
+
+      <!-- Results -->
+      <section class="discovery-results">
+        <div class="results-toolbar">
+            <div class="results-summary">
+                <span id="resultCount">
+                0 games
+                </span>
+            </div>
+            <div class="discovery-search">
+                <input type="search" id="gameSearch" placeholder="Search games..." autocomplete="off">
+            </div>
+            <select id="sortGames">
+                <option value="match">
+                Best Match
+                </option>
+                <option value="name">
+                Name
+                </option>
+                <option value="difficulty">
+                Difficulty
+                </option>
+                <option value="year">
+                Newest
+                </option>
+            </select>
+        </div>
+        <div id="activeFilters" class="active-filters"></div>
+        <div id="discoveryGrid" class="discovery-grid"></div>
+      </section>
+    </section>
+  </main>
+
+
+  <script src="js/colors.js"></script>
+  <script src="js/game-rubric.js"></script>
+  <script src="js/game-profile.js"></script>
+  <script src="js/games-loader.js"></script>
+  <script src="js/preference-engine.js"></script>
+  <script src="js/constraint-engine.js"></script>
+  <script src="js/recommendation-engine.js"></script>
+  <script src="js/ranking-engine.js"></script>
+  <script src="js/explanation-engine.js"></script>
+  <script src="js/format-utils.js"></script>
+  <script src="js/discovery.js"></script>
+
+</body>
+
+</html>

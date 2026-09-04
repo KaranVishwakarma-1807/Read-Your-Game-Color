@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta 
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Your Gaming Color · Play Your Color</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Result CSS -->
+    <link rel="stylesheet" href="css/result.css">
+</head>
+
+
+<body class="result-page">
+
+    <!-- Navigation -->
+    <header class="result-header">
+        <a href="index.html" class="logo">
+            PLAY<span>YOUR</span>COLOR
+        </a>
+
+        <button id="restartButton" class="restart-button" type="button">
+            Retake Assessment
+        </button>
+    </header>
+
+
+   <!-- Results -->
+    <main>        
+        <!-- Hero Result -->
+        <section class="result-hero">
+            <div class="result-container">
+                <p class="result-eyebrow" id="resultEyebrow">
+                    YOUR GAMING COLOR
+                </p>
+
+                <div class="color-orb" id="colorOrb">
+                </div>
+
+                <h1 class="result-color-name" id="resultColorName">
+                    RED
+                </h1>
+
+                <h2 class="result-archetype" id="resultArchetype">
+                    THE CHALLENGER
+                </h2>
+
+                <p class="result-tagline" id="resultTagline">
+                    You play to overcome.
+                </p>
+
+                <p class="result-description" id="resultDescription">
+                </p>
+
+                <div class="result-keywords" id="resultKeywords">
+                </div>
+            </div>
+        </section>
+
+        <section class="secondary-color-section">
+            <div class="result-container">
+                <p class="eyebrow">
+                    YOUR SECOND COLOR
+                </p>
+
+                <div class="secondary-color-card">
+                    <div class="secondary-color-orb" id="secondaryColorOrb">
+                    </div>
+
+                    <div>
+                        <h3 id="secondaryColorName">
+                            GREEN
+                        </h3>
+
+                        <p id="secondaryColorArchetype">
+                            THE EXPLORER
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Color Information -->
+        <section class="result-section">
+            <div class="result-container">
+                <div class="section-heading">
+                    <p class="eyebrow">
+                        YOUR PROFILE
+                    </p>
+
+                    <h2>
+                        More than<br>
+                        one color.
+                    </h2>
+                </div>
+
+                <div class="profile-grid">
+
+                    <!-- Primary -->
+                    <article class="profile-card">
+                        <p class="card-label">
+                            PRIMARY COLOR
+                        </p>
+
+                        <div class="profile-color-dot" id="primaryDot"></div>
+
+                        <h3 id="primaryName">
+                            The Challenger
+                        </h3>
+
+                        <p id="primaryDescription">
+                            Your dominant gaming motivation.
+                        </p>
+                    </article>
+
+                    <!-- Secondary -->
+                    <article class="profile-card">
+                        <p class="card-label">
+                            SECONDARY COLOR
+                        </p>
+
+                        <div class="profile-color-dot" id="secondaryDot"></div>
+
+                        <h3 id="secondaryName">
+                            The Explorer
+                        </h3>
+
+                        <p id="secondaryDescription">
+                            A strong secondary influence on how you play.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="result-section">
+            <div class="result-container">
+                <div class="section-heading">
+                    <p class="eyebrow">YOUR GAMING DNA</p>
+                    <h2>More than<br>a color.</h2>
+                    <p class="section-introduction">Your color describes the way you play. Your Gaming DNA describes the games you're naturally drawn toward.</p>
+                </div>
+                <div id="playerDNAGrid" class="player-dna-grid"></div>
+            </div>
+        </section>
+
+
+        <!-- Color BreakDown -->
+        <section class="result-section">
+            <div class="result-container">
+                <div class="section-heading">
+                    <p class="eyebrow">
+                        COLOR BREAKDOWN
+                    </p>
+
+                    <h2>
+                        Where you<br>
+                        fit on the spectrum.
+                    </h2>
+                </div>
+
+                <div class="color-bars" id="colorBars"></div>
+            </div>
+        </section>
+
+
+        <!-- Trait Breakdown -->
+        <!-- Personality -->
+        <section class="result-section">
+            <div class="result-container">
+                <div class="section-heading">
+                    <p class="eyebrow">
+                        PERSONALITY
+                    </p>
+                    <h2>
+                        What drives<br>
+                        the way you play.
+                    </h2>
+                </div>
+                <div class="trait-grid" id="traitGrid">
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Trait -->
+        <section class="result-section">
+            <div class="result-container">
+                <div class="section-heading">
+                    <p class="eyebrow">
+                        VISUAL DNA
+                    </p>
+                    <h2>
+                        The worlds<br>
+                        you're drawn to.
+                    </h2>
+                </div>
+                <div class="preference-section-grid" id="visualDNA">
+                </div>
+            </div>
+        </section>
+
+        <!-- Presentation Trait -->
+        <section class="result-section">
+            <div class="result-container">
+                <div class="section-heading">
+                    <p class="eyebrow">
+                        PRESENTATION DNA
+                    </p>
+                    <h2>
+                        How you prefer<br>
+                        to see the game.
+                    </h2>
+                </div>
+                <div class="preference-section-grid" id="presentationDNA">
+                </div>
+            </div>
+        </section>
+
+        <!-- World Trait -->
+        <section class="result-section">
+            <div class="result-container">
+                <div class="section-heading">
+                    <p class="eyebrow">
+                        WORLD DNA
+                    </p>
+                    <h2>
+                        The worlds<br>
+                        you want to inhabit.
+                    </h2>
+                </div>
+                <div class="preference-section-grid" id="worldDNA">
+                </div>
+            </div>
+        </section>
+
+        <!-- Gameplay Trait -->
+        <section class="result-section">
+            <div class="result-container">
+                <div class="section-heading">
+                    <p class="eyebrow">
+                        GAMEPLAY DNA
+                    </p>
+                    <h2>
+                        What you actually<br>
+                        want to do.
+                    </h2>
+                </div>
+                <div class="preference-section-grid" id="gameplayDNA">
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Trait -->
+        <section class="result-section">
+            <div class="result-container">
+                <div class="section-heading">
+                    <p class="eyebrow">
+                        EXPERIENCE DNA
+                    </p>
+                    <h2>
+                        How you want<br>
+                        the game to feel.
+                    </h2>
+                </div>
+                <div class="preference-section-grid" id="experienceDNA">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Future Plan -->
+        <section class="result-section recommendations-section">
+            <div class="result-container">
+                <div class="section-heading">
+                    <p class="eyebrow">
+                        YOUR TOP MATCHES
+                    </p>
+
+                    <h2>
+                        Games that<br>
+                        fit the way you play.
+                    </h2>
+                </div>
+            
+                <div class="featured-match-section">
+                <p class="eyebrow" id="featuredRecommendationLabel">
+                    YOUR #1 MATCH
+                </p>
+                <div id="featuredRecommendation" class="featured-recommendation"></div>
+                </div>
+
+                <!-- Recommendation cards -->
+                <div class="recommendation-list" id="recommendationList"></div>
+            </div>
+        </section>
+
+        <section class="result-section surprise-section">
+            <div class="result-container">
+                <div class="section-heading">
+                    <p class="eyebrow">
+                        OUTSIDE YOUR COMFORT ZONE
+                    </p>
+                    <h2>
+                        A few games<br>
+                        you might not expect.
+                    </h2>
+                </div>
+                <div class="recommendation-list" id="surpriseList">
+                </div>
+            </div>
+        </section>
+
+        <div class="discovery-cta">
+            <span>
+                WANT TO EXPLORE MORE?
+            </span>
+            <a href="discovery.html">
+                DISCOVER ALL GAMES →
+            </a>
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+            Play Your Color · Discover Your Gaming DNA
+        </p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/colors.js"></script>
+
+    <script src="js/game-rubric.js"></script>
+    <script src="js/game-profile.js"></script>
+    <script src="js/games-loader.js"></script>  
+
+    <script src="js/preference-engine.js"></script>
+    <script src="js/constraint-engine.js"></script>
+
+    <script src="js/recommendation-engine.js"></script>
+    <script src="js/ranking-engine.js"></script>
+    <script src="js/explanation-engine.js"></script>
+
+    <!-- <script src="js/test-recommendations.js"></script> -->
+    <script src="js/format-utils.js"></script>
+    <script src="js/dna-utils.js"></script>
+
+    <script src="js/result.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,3870 @@
+[
+
+    {
+        "id": "elden-ring",
+
+        "title": "Elden Ring",
+        "media": {
+            "cover": "assets/games/elden-ring-cover.jpg",
+            "hero": "assets/games/elden-ring-hero.jpg"
+        },
+
+        "visual": {
+
+            "styles": {
+                "pixelArt": 0,
+                "handDrawn": 0,
+                "anime": 20,
+                "celShaded": 0,
+                "stylized3D": 75,
+                "realistic": 70,
+                "lowPoly": 0,
+                "minimalist": 0,
+                "voxel": 0,
+                "retro": 0
+            },
+
+            "tones": {
+                "colorful": 25,
+                "dark": 95,
+                "gritty": 90,
+                "moody": 90,
+                "whimsical": 5,
+                "cozy": 0,
+                "surreal": 35,
+                "atmospheric": 95,
+                "retro": 0
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "3d",
+
+            "camera": [
+                "thirdPerson"
+            ],
+
+            "cameraFreedom": 95
+
+        },
+
+        "world": {
+
+            "structures": [
+                "openWorld"
+            ],
+
+            "freedom": 90,
+            "exploration": 95
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "combat",
+                "exploration",
+                "rpg"
+            ],
+
+            "scores": {
+
+                "combat": 98,
+                "shooting": 15,
+                "melee": 95,
+                "platforming": 25,
+                "stealth": 30,
+                "puzzle": 20,
+                "strategy": 60,
+                "simulation": 0,
+                "management": 0,
+                "building": 5,
+                "crafting": 15,
+                "exploration": 92,
+                "driving": 0,
+                "racing": 0,
+                "farming": 0,
+                "customization": 50
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 88,
+
+            "systems": [
+                "levels",
+                "equipment",
+                "skills",
+                "builds"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 80,
+            "intensity": 92,
+            "difficulty": 96,
+            "narrative": 60,
+
+            "atmosphere": [
+                "dark",
+                "mysterious",
+                "epic"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer",
+                "onlineCoop"
+            ],
+
+            "importance": 25,
+
+            "playerCount": {
+                "min": 1,
+                "max": 4
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2022,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox"
+            ],
+
+            "genres": [
+                "Action RPG",
+                "Soulslike",
+                "Open World"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "hades",
+
+        "title": "Hades",
+        "media": {
+            "cover": "assets/games/hades-cover.jpg"
+        },
+
+        "visual": {
+
+            "styles": {
+                "pixelArt": 0,
+                "handDrawn": 90,
+                "anime": 10,
+                "celShaded": 0,
+                "stylized3D": 10,
+                "realistic": 0,
+                "lowPoly": 0,
+                "minimalist": 0,
+                "voxel": 0,
+                "retro": 20
+            },
+
+            "tones": {
+                "colorful": 85,
+                "dark": 55,
+                "gritty": 20,
+                "moody": 45,
+                "whimsical": 45,
+                "cozy": 10,
+                "surreal": 55,
+                "atmospheric": 80,
+                "retro": 20
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "3d",
+
+            "camera": [
+                "topDown"
+            ],
+
+            "cameraFreedom": 80
+
+        },
+
+        "world": {
+
+            "structures": [
+                "roguelike"
+            ],
+
+            "freedom": 40,
+            "exploration": 50
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "combat",
+                "rpg",
+                "progression"
+            ],
+
+            "scores": {
+
+                "combat": 96,
+                "shooting": 45,
+                "melee": 90,
+                "platforming": 15,
+                "stealth": 0,
+                "puzzle": 10,
+                "strategy": 65,
+                "simulation": 0,
+                "management": 0,
+                "building": 0,
+                "crafting": 0,
+                "exploration": 45,
+                "driving": 0,
+                "racing": 0,
+                "farming": 0,
+                "customization": 75
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 95,
+
+            "systems": [
+                "levels",
+                "skills",
+                "upgrades",
+                "metaProgression"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 92,
+            "intensity": 90,
+            "difficulty": 82,
+            "narrative": 82,
+
+            "atmosphere": [
+                "epic",
+                "mysterious",
+                "emotional",
+                "colorful"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer"
+            ],
+
+            "importance": 0,
+
+            "playerCount": {
+                "min": 1,
+                "max": 1
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2020,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox",
+                "Nintendo"
+            ],
+
+            "genres": [
+                "Roguelike",
+                "Action",
+                "RPG"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "minecraft",
+
+        "title": "Minecraft",
+        "media": {
+            "cover": "assets/games/minecraft-cover.jpg"
+        },
+
+        "visual": {
+
+            "styles": {
+                "pixelArt": 0,
+                "handDrawn": 0,
+                "anime": 0,
+                "celShaded": 0,
+                "stylized3D": 55,
+                "realistic": 0,
+                "lowPoly": 50,
+                "minimalist": 20,
+                "voxel": 100,
+                "retro": 15
+            },
+
+            "tones": {
+                "colorful": 90,
+                "dark": 20,
+                "gritty": 0,
+                "moody": 10,
+                "whimsical": 70,
+                "cozy": 65,
+                "surreal": 25,
+                "atmospheric": 55,
+                "retro": 20
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "3d",
+
+            "camera": [
+                "firstPerson",
+                "thirdPerson"
+            ],
+
+            "cameraFreedom": 100
+
+        },
+
+        "world": {
+
+            "structures": [
+                "sandbox",
+                "procedural",
+                "openWorld"
+            ],
+
+            "freedom": 100,
+            "exploration": 90
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "building",
+                "crafting",
+                "exploration",
+                "survival",
+                "simulation"
+            ],
+
+            "scores": {
+
+                "combat": 40,
+                "shooting": 10,
+                "melee": 35,
+                "platforming": 35,
+                "stealth": 5,
+                "puzzle": 20,
+                "strategy": 55,
+                "simulation": 75,
+                "management": 45,
+                "building": 100,
+                "crafting": 95,
+                "exploration": 92,
+                "driving": 15,
+                "racing": 5,
+                "farming": 65,
+                "customization": 95
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 60,
+
+            "systems": [
+                "equipment",
+                "crafting",
+                "upgrades",
+                "building"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 50,
+            "intensity": 40,
+            "difficulty": 45,
+            "narrative": 10,
+
+            "atmosphere": [
+                "colorful",
+                "cozy",
+                "adventurous"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer",
+                "onlineCoop"
+            ],
+
+            "importance": 75,
+
+            "playerCount": {
+                "min": 1,
+                "max": 8
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2011,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox",
+                "Nintendo",
+                "Mobile"
+            ],
+
+            "genres": [
+                "Sandbox",
+                "Survival",
+                "Building"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "outer-wilds",
+
+        "title": "Outer Wilds",
+
+        "visual": {
+
+            "styles": {
+                "pixelArt": 0,
+                "handDrawn": 20,
+                "anime": 0,
+                "celShaded": 0,
+                "stylized3D": 90,
+                "realistic": 15,
+                "lowPoly": 30,
+                "minimalist": 15,
+                "voxel": 0,
+                "retro": 10
+            },
+
+            "tones": {
+                "colorful": 70,
+                "dark": 40,
+                "gritty": 0,
+                "moody": 65,
+                "whimsical": 45,
+                "cozy": 25,
+                "surreal": 90,
+                "atmospheric": 100,
+                "retro": 10
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "3d",
+
+            "camera": [
+                "firstPerson"
+            ],
+
+            "cameraFreedom": 95
+
+        },
+
+        "world": {
+
+            "structures": [
+                "openWorld"
+            ],
+
+            "freedom": 100,
+            "exploration": 100
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "exploration",
+                "puzzle"
+            ],
+
+            "scores": {
+
+                "combat": 0,
+                "shooting": 0,
+                "melee": 0,
+                "platforming": 15,
+                "stealth": 0,
+                "puzzle": 85,
+                "strategy": 45,
+                "simulation": 15,
+                "management": 0,
+                "building": 0,
+                "crafting": 0,
+                "exploration": 100,
+                "driving": 10,
+                "racing": 0,
+                "farming": 0,
+                "customization": 0
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 25,
+
+            "systems": [
+                "knowledge",
+                "discovery"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 35,
+            "intensity": 50,
+            "difficulty": 40,
+            "narrative": 95,
+
+            "atmosphere": [
+                "mysterious",
+                "surreal",
+                "emotional",
+                "atmospheric"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 1
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2019,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox",
+                "Nintendo"
+            ],
+
+            "genres": [
+                "Adventure",
+                "Puzzle",
+                "Exploration"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "disco-elysium",
+
+        "title": "Disco Elysium",
+
+        "visual": {
+
+            "styles": {
+                "pixelArt": 0,
+                "handDrawn": 95,
+                "anime": 0,
+                "celShaded": 20,
+                "stylized3D": 0,
+                "realistic": 0,
+                "lowPoly": 0,
+                "minimalist": 10,
+                "voxel": 0,
+                "retro": 25
+            },
+
+            "tones": {
+                "colorful": 40,
+                "dark": 70,
+                "gritty": 80,
+                "moody": 95,
+                "whimsical": 45,
+                "cozy": 5,
+                "surreal": 75,
+                "atmospheric": 95,
+                "retro": 20
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "2.5d",
+
+            "camera": [
+                "isometric"
+            ],
+
+            "cameraFreedom": 65
+
+        },
+
+        "world": {
+
+            "structures": [
+                "openWorld",
+                "branching"
+            ],
+
+            "freedom": 90,
+            "exploration": 75
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "dialogue",
+                "exploration",
+                "rpg"
+            ],
+
+            "scores": {
+
+                "combat": 10,
+                "shooting": 0,
+                "melee": 5,
+                "platforming": 0,
+                "stealth": 0,
+                "puzzle": 35,
+                "strategy": 50,
+                "simulation": 30,
+                "management": 0,
+                "building": 0,
+                "crafting": 0,
+                "exploration": 70,
+                "driving": 0,
+                "racing": 0,
+                "farming": 0,
+                "customization": 65
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 75,
+
+            "systems": [
+                "skills",
+                "choices",
+                "dialogue"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 30,
+            "intensity": 45,
+            "difficulty": 55,
+            "narrative": 100,
+
+            "atmosphere": [
+                "dark",
+                "moody",
+                "surreal",
+                "emotional"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 1
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2019,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox",
+                "Nintendo"
+            ],
+
+            "genres": [
+                "RPG",
+                "Narrative",
+                "Adventure"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "civilization-vi",
+
+        "title": "Civilization VI",
+
+        "visual": {
+
+            "styles": {
+                "pixelArt": 0,
+                "handDrawn": 0,
+                "anime": 0,
+                "celShaded": 0,
+                "stylized3D": 80,
+                "realistic": 25,
+                "lowPoly": 20,
+                "minimalist": 10,
+                "voxel": 0,
+                "retro": 10
+            },
+
+            "tones": {
+                "colorful": 80,
+                "dark": 10,
+                "gritty": 5,
+                "moody": 15,
+                "whimsical": 25,
+                "cozy": 35,
+                "surreal": 5,
+                "atmospheric": 50,
+                "retro": 10
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "3d",
+
+            "camera": [
+                "isometric"
+            ],
+
+            "cameraFreedom": 80
+
+        },
+
+        "world": {
+
+            "structures": [
+                "procedural"
+            ],
+
+            "freedom": 95,
+            "exploration": 70
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "strategy",
+                "simulation",
+                "management"
+            ],
+
+            "scores": {
+
+                "combat": 65,
+                "shooting": 0,
+                "melee": 30,
+                "platforming": 0,
+                "stealth": 0,
+                "puzzle": 40,
+                "strategy": 100,
+                "simulation": 95,
+                "management": 100,
+                "building": 70,
+                "crafting": 10,
+                "exploration": 70,
+                "driving": 0,
+                "racing": 0,
+                "farming": 0,
+                "customization": 35
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 90,
+
+            "systems": [
+                "technology",
+                "upgrades",
+                "territory",
+                "strategy"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 20,
+            "intensity": 55,
+            "difficulty": 75,
+            "narrative": 25,
+
+            "atmosphere": [
+                "epic",
+                "strategic",
+                "colorful"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer",
+                "competitive"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 6
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2016,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox",
+                "Nintendo",
+                "Mobile"
+            ],
+
+            "genres": [
+                "Strategy",
+                "Simulation",
+                "4X"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "stardew-valley",
+
+        "title": "Stardew Valley",
+
+        "visual": {
+
+            "styles": {
+                "pixelArt": 100,
+                "handDrawn": 15,
+                "anime": 10,
+                "celShaded": 0,
+                "stylized3D": 0,
+                "realistic": 0,
+                "lowPoly": 0,
+                "minimalist": 20,
+                "voxel": 0,
+                "retro": 70
+            },
+
+            "tones": {
+                "colorful": 85,
+                "dark": 10,
+                "gritty": 0,
+                "moody": 20,
+                "whimsical": 60,
+                "cozy": 100,
+                "surreal": 10,
+                "atmospheric": 70,
+                "retro": 85
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "2d",
+
+            "camera": [
+                "topDown"
+            ],
+
+            "cameraFreedom": 35
+
+        },
+
+        "world": {
+
+            "structures": [
+                "hubBased"
+            ],
+
+            "freedom": 85,
+            "exploration": 65
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "farming",
+                "simulation",
+                "crafting",
+                "social",
+                "exploration"
+            ],
+
+            "scores": {
+
+                "combat": 30,
+                "shooting": 0,
+                "melee": 15,
+                "platforming": 5,
+                "stealth": 0,
+                "puzzle": 10,
+                "strategy": 40,
+                "simulation": 90,
+                "management": 80,
+                "building": 65,
+                "crafting": 80,
+                "exploration": 55,
+                "driving": 0,
+                "racing": 0,
+                "farming": 100,
+                "customization": 85
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 60,
+
+            "systems": [
+                "farming",
+                "relationships",
+                "upgrades",
+                "collections"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 20,
+            "intensity": 15,
+            "difficulty": 20,
+            "narrative": 60,
+
+            "atmosphere": [
+                "cozy",
+                "peaceful",
+                "colorful"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer",
+                "onlineCoop"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 4
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2016,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox",
+                "Nintendo",
+                "Mobile"
+            ],
+
+            "genres": [
+                "Simulation",
+                "Farming",
+                "RPG"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "it-takes-two",
+
+        "title": "It Takes Two",
+
+        "visual": {
+
+            "styles": {
+                "pixelArt": 0,
+                "handDrawn": 0,
+                "anime": 10,
+                "celShaded": 45,
+                "stylized3D": 95,
+                "realistic": 20,
+                "lowPoly": 0,
+                "minimalist": 0,
+                "voxel": 0,
+                "retro": 0
+            },
+
+            "tones": {
+                "colorful": 95,
+                "dark": 10,
+                "gritty": 0,
+                "moody": 20,
+                "whimsical": 95,
+                "cozy": 60,
+                "surreal": 70,
+                "atmospheric": 75,
+                "retro": 0
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "3d",
+
+            "camera": [
+                "thirdPerson"
+            ],
+
+            "cameraFreedom": 75
+
+        },
+
+        "world": {
+
+            "structures": [
+                "linear",
+                "levelBased"
+            ],
+
+            "freedom": 35,
+            "exploration": 40
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "co-op",
+                "platforming",
+                "puzzle"
+            ],
+
+            "scores": {
+
+                "combat": 45,
+                "shooting": 20,
+                "melee": 30,
+                "platforming": 85,
+                "stealth": 5,
+                "puzzle": 80,
+                "strategy": 55,
+                "simulation": 10,
+                "management": 5,
+                "building": 20,
+                "crafting": 5,
+                "exploration": 40,
+                "driving": 15,
+                "racing": 15,
+                "farming": 0,
+                "customization": 35
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 45,
+
+            "systems": [
+                "levelProgression",
+                "abilities"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 70,
+            "intensity": 55,
+            "difficulty": 35,
+            "narrative": 80,
+
+            "atmosphere": [
+                "colorful",
+                "whimsical",
+                "emotional"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "localCoop",
+                "onlineCoop"
+            ],
+
+            "importance": 100,
+
+            "playerCount": {
+                "min": 2,
+                "max": 2
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2021,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox"
+            ],
+
+            "genres": [
+                "Co-op",
+                "Adventure",
+                "Platformer"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "doom-eternal",
+
+        "title": "Doom Eternal",
+
+        "visual": {
+
+            "styles": {
+                "pixelArt": 0,
+                "handDrawn": 0,
+                "anime": 0,
+                "celShaded": 0,
+                "stylized3D": 65,
+                "realistic": 70,
+                "lowPoly": 0,
+                "minimalist": 0,
+                "voxel": 0,
+                "retro": 50
+            },
+
+            "tones": {
+                "colorful": 40,
+                "dark": 85,
+                "gritty": 95,
+                "moody": 70,
+                "whimsical": 5,
+                "cozy": 0,
+                "surreal": 20,
+                "atmospheric": 80,
+                "retro": 45
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "3d",
+
+            "camera": [
+                "firstPerson"
+            ],
+
+            "cameraFreedom": 100
+
+        },
+
+        "world": {
+
+            "structures": [
+                "levelBased"
+            ],
+
+            "freedom": 30,
+            "exploration": 35
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "combat",
+                "shooting",
+                "platforming"
+            ],
+
+            "scores": {
+
+                "combat": 100,
+                "shooting": 100,
+                "melee": 70,
+                "platforming": 65,
+                "stealth": 0,
+                "puzzle": 15,
+                "strategy": 65,
+                "simulation": 0,
+                "management": 0,
+                "building": 0,
+                "crafting": 0,
+                "exploration": 30,
+                "driving": 0,
+                "racing": 0,
+                "farming": 0,
+                "customization": 25
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 65,
+
+            "systems": [
+                "weapons",
+                "upgrades",
+                "skills"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 100,
+            "intensity": 100,
+            "difficulty": 88,
+            "narrative": 35,
+
+            "atmosphere": [
+                "dark",
+                "gritty",
+                "epic"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 1
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2020,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox",
+                "Nintendo"
+            ],
+
+            "genres": [
+                "FPS",
+                "Action",
+                "Shooter"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "hollow-knight",
+
+        "title": "Hollow Knight",
+        "media": {
+            "cover": "assets/games/hollow-knight-cover.jpg"
+        },
+
+        "visual": {
+
+            "styles": {
+                "pixelArt": 0,
+                "handDrawn": 100,
+                "anime": 10,
+                "celShaded": 0,
+                "stylized3D": 0,
+                "realistic": 0,
+                "lowPoly": 0,
+                "minimalist": 10,
+                "voxel": 0,
+                "retro": 20
+            },
+
+            "tones": {
+                "colorful": 30,
+                "dark": 85,
+                "gritty": 55,
+                "moody": 95,
+                "whimsical": 20,
+                "cozy": 10,
+                "surreal": 50,
+                "atmospheric": 100,
+                "retro": 15
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "2d",
+
+            "camera": [
+                "sideScroller"
+            ],
+
+            "cameraFreedom": 35
+
+        },
+
+        "world": {
+
+            "structures": [
+                "metroidvania"
+            ],
+
+            "freedom": 75,
+            "exploration": 90
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "combat",
+                "exploration",
+                "platforming"
+            ],
+
+            "scores": {
+
+                "combat": 90,
+                "shooting": 10,
+                "melee": 90,
+                "platforming": 85,
+                "stealth": 0,
+                "puzzle": 25,
+                "strategy": 35,
+                "simulation": 0,
+                "management": 0,
+                "building": 0,
+                "crafting": 0,
+                "exploration": 90,
+                "driving": 0,
+                "racing": 0,
+                "farming": 0,
+                "customization": 45
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 78,
+
+            "systems": [
+                "abilities",
+                "equipment",
+                "unlockingAreas"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 70,
+            "intensity": 70,
+            "difficulty": 82,
+            "narrative": 70,
+
+            "atmosphere": [
+                "dark",
+                "mysterious",
+                "atmospheric"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 1
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2017,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox",
+                "Nintendo"
+            ],
+
+            "genres": [
+                "Metroidvania",
+                "Action",
+                "Platformer"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "celeste",
+
+        "title": "Celeste",
+
+        "visual": {
+
+            "styles": {
+
+                "pixelArt": 25,
+                "handDrawn": 90,
+                "anime": 10,
+                "celShaded": 0,
+                "stylized3D": 0,
+                "realistic": 0,
+                "lowPoly": 0,
+                "minimalist": 20,
+                "voxel": 0,
+                "retro": 30
+
+            },
+
+            "tones": {
+
+                "colorful": 75,
+                "dark": 25,
+                "gritty": 10,
+                "moody": 55,
+                "whimsical": 30,
+                "cozy": 15,
+                "peaceful": 35,
+                "surreal": 30,
+                "atmospheric": 85
+
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "2d",
+
+            "camera": [
+                "sideScroller"
+            ],
+
+            "cameraFreedom": 35
+
+        },
+
+        "world": {
+
+            "structures": [
+                "levelBased"
+            ],
+
+            "freedom": 30,
+            "exploration": 35
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "platforming",
+                "exploration"
+            ],
+
+            "scores": {
+
+                "combat": 0,
+                "shooting": 0,
+                "melee": 0,
+                "platforming": 100,
+                "stealth": 0,
+                "puzzle": 35,
+                "strategy": 20,
+                "simulation": 0,
+                "management": 0,
+                "building": 0,
+                "crafting": 0,
+                "exploration": 30,
+                "driving": 0,
+                "racing": 0,
+                "farming": 0,
+                "customization": 15
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 65,
+
+            "systems": [
+                "levels",
+                "abilities"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 80,
+            "intensity": 75,
+            "difficulty": 90,
+            "narrative": 70,
+
+            "atmosphere": [
+                "emotional",
+                "atmospheric",
+                "colorful"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 1
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2018,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox",
+                "Nintendo"
+            ],
+
+            "genres": [
+                "Platformer",
+                "Adventure"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "breath-of-the-wild",
+
+        "title": "The Legend of Zelda: Breath of the Wild",
+
+        "visual": {
+
+            "styles": {
+
+                "pixelArt": 0,
+                "handDrawn": 25,
+                "anime": 35,
+                "celShaded": 55,
+                "stylized3D": 90,
+                "realistic": 25,
+                "lowPoly": 10,
+                "minimalist": 15,
+                "voxel": 0,
+                "retro": 15
+
+            },
+
+            "tones": {
+
+                "colorful": 85,
+                "dark": 25,
+                "gritty": 10,
+                "moody": 35,
+                "whimsical": 45,
+                "cozy": 30,
+                "peaceful": 60,
+                "surreal": 15,
+                "atmospheric": 90
+
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "3d",
+
+            "camera": [
+                "thirdPerson"
+            ],
+
+            "cameraFreedom": 95
+
+        },
+
+        "world": {
+
+            "structures": [
+                "openWorld"
+            ],
+
+            "freedom": 98,
+            "exploration": 100
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "combat",
+                "exploration",
+                "crafting",
+                "puzzle",
+                "customization"
+            ],
+
+            "scores": {
+
+                "combat": 75,
+                "shooting": 35,
+                "melee": 75,
+                "platforming": 45,
+                "stealth": 35,
+                "puzzle": 70,
+                "strategy": 55,
+                "simulation": 15,
+                "management": 0,
+                "building": 10,
+                "crafting": 55,
+                "exploration": 100,
+                "driving": 0,
+                "racing": 0,
+                "farming": 0,
+                "customization": 55
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 75,
+
+            "systems": [
+                "equipment",
+                "skills",
+                "upgrades",
+                "unlockingAreas"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 55,
+            "intensity": 55,
+            "difficulty": 60,
+            "narrative": 65,
+
+            "atmosphere": [
+                "adventurous",
+                "colorful",
+                "peaceful",
+                "atmospheric"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 1
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2017,
+
+            "platforms": [
+                "Nintendo"
+            ],
+
+            "genres": [
+                "Adventure",
+                "Action",
+                "Open World"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "sekiro",
+
+        "title": "Sekiro: Shadows Die Twice",
+
+        "visual": {
+
+            "styles": {
+
+                "pixelArt": 0,
+                "handDrawn": 0,
+                "anime": 20,
+                "celShaded": 0,
+                "stylized3D": 70,
+                "realistic": 60,
+                "lowPoly": 0,
+                "minimalist": 0,
+                "voxel": 0,
+                "retro": 10
+
+            },
+
+            "tones": {
+
+                "colorful": 20,
+                "dark": 80,
+                "gritty": 85,
+                "moody": 90,
+                "whimsical": 5,
+                "cozy": 0,
+                "peaceful": 15,
+                "surreal": 25,
+                "atmospheric": 90
+
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "3d",
+
+            "camera": [
+                "thirdPerson"
+            ],
+
+            "cameraFreedom": 95
+
+        },
+
+        "world": {
+
+            "structures": [
+                "levelBased",
+                "hubBased"
+            ],
+
+            "freedom": 55,
+            "exploration": 70
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "combat",
+                "exploration",
+                "stealth"
+            ],
+
+            "scores": {
+
+                "combat": 100,
+                "shooting": 20,
+                "melee": 100,
+                "platforming": 45,
+                "stealth": 55,
+                "puzzle": 20,
+                "strategy": 70,
+                "simulation": 0,
+                "management": 0,
+                "building": 0,
+                "crafting": 5,
+                "exploration": 65,
+                "driving": 0,
+                "racing": 0,
+                "farming": 0,
+                "customization": 35
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 75,
+
+            "systems": [
+                "skills",
+                "equipment",
+                "abilities"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 80,
+            "intensity": 90,
+            "difficulty": 95,
+            "narrative": 70,
+
+            "atmosphere": [
+                "dark",
+                "gritty",
+                "mysterious",
+                "atmospheric"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 1
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2019,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox"
+            ],
+
+            "genres": [
+                "Action",
+                "Soulslike",
+                "Adventure"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "resident-evil-2",
+
+        "title": "Resident Evil 2",
+
+        "visual": {
+
+            "styles": {
+
+                "pixelArt": 0,
+                "handDrawn": 0,
+                "anime": 5,
+                "celShaded": 0,
+                "stylized3D": 25,
+                "realistic": 90,
+                "lowPoly": 0,
+                "minimalist": 0,
+                "voxel": 0,
+                "retro": 35
+
+            },
+
+            "tones": {
+
+                "colorful": 5,
+                "dark": 100,
+                "gritty": 85,
+                "moody": 95,
+                "whimsical": 0,
+                "cozy": 0,
+                "peaceful": 5,
+                "surreal": 15,
+                "atmospheric": 100
+
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "3d",
+
+            "camera": [
+                "thirdPerson"
+            ],
+
+            "cameraFreedom": 85
+
+        },
+
+        "world": {
+
+            "structures": [
+                "hubBased",
+                "branching"
+            ],
+
+            "freedom": 45,
+            "exploration": 70
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "combat",
+                "exploration",
+                "puzzle"
+            ],
+
+            "scores": {
+
+                "combat": 70,
+                "shooting": 80,
+                "melee": 15,
+                "platforming": 0,
+                "stealth": 30,
+                "puzzle": 60,
+                "strategy": 50,
+                "simulation": 0,
+                "management": 25,
+                "building": 0,
+                "crafting": 15,
+                "exploration": 65,
+                "driving": 0,
+                "racing": 0,
+                "farming": 0,
+                "customization": 10
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 55,
+
+            "systems": [
+                "equipment",
+                "upgrades",
+                "choices"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 55,
+            "intensity": 90,
+            "difficulty": 65,
+            "narrative": 75,
+
+            "atmosphere": [
+                "horror",
+                "dark",
+                "tense",
+                "atmospheric"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 1
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2019,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox"
+            ],
+
+            "genres": [
+                "Horror",
+                "Action",
+                "Adventure"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "hitman-world-of-assassination",
+
+        "title": "Hitman: World of Assassination",
+
+        "visual": {
+
+            "styles": {
+
+                "pixelArt": 0,
+                "handDrawn": 0,
+                "anime": 0,
+                "celShaded": 0,
+                "stylized3D": 45,
+                "realistic": 85,
+                "lowPoly": 0,
+                "minimalist": 0,
+                "voxel": 0,
+                "retro": 10
+
+            },
+
+            "tones": {
+
+                "colorful": 45,
+                "dark": 55,
+                "gritty": 60,
+                "moody": 65,
+                "whimsical": 15,
+                "cozy": 5,
+                "peaceful": 10,
+                "surreal": 5,
+                "atmospheric": 70
+
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "3d",
+
+            "camera": [
+                "thirdPerson",
+                "firstPerson"
+            ],
+
+            "cameraFreedom": 90
+
+        },
+
+        "world": {
+
+            "structures": [
+                "levelBased",
+                "branching"
+            ],
+
+            "freedom": 95,
+            "exploration": 75
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "stealth",
+                "exploration",
+                "strategy"
+            ],
+
+            "scores": {
+
+                "combat": 55,
+                "shooting": 60,
+                "melee": 35,
+                "platforming": 15,
+                "stealth": 100,
+                "puzzle": 65,
+                "strategy": 90,
+                "simulation": 25,
+                "management": 0,
+                "building": 0,
+                "crafting": 0,
+                "exploration": 70,
+                "driving": 20,
+                "racing": 0,
+                "farming": 0,
+                "customization": 25
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 65,
+
+            "systems": [
+                "equipment",
+                "upgrades",
+                "unlocks"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 40,
+            "intensity": 65,
+            "difficulty": 60,
+            "narrative": 55,
+
+            "atmosphere": [
+                "mysterious",
+                "strategic",
+                "atmospheric"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 1
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2023,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox"
+            ],
+
+            "genres": [
+                "Stealth",
+                "Action",
+                "Sandbox"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "slay-the-spire",
+
+        "title": "Slay the Spire",
+
+        "visual": {
+
+            "styles": {
+
+                "pixelArt": 15,
+                "handDrawn": 70,
+                "anime": 10,
+                "celShaded": 0,
+                "stylized3D": 0,
+                "realistic": 0,
+                "lowPoly": 0,
+                "minimalist": 10,
+                "voxel": 0,
+                "retro": 20
+
+            },
+
+            "tones": {
+
+                "colorful": 35,
+                "dark": 65,
+                "gritty": 25,
+                "moody": 65,
+                "whimsical": 10,
+                "cozy": 10,
+                "peaceful": 15,
+                "surreal": 15,
+                "atmospheric": 45
+
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "2d",
+
+            "camera": [
+                "isometric"
+            ],
+
+            "cameraFreedom": 15
+
+        },
+
+        "world": {
+
+            "structures": [
+                "roguelike"
+            ],
+
+            "freedom": 55,
+            "exploration": 30
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "strategy",
+                "puzzle"
+            ],
+
+            "scores": {
+
+                "combat": 75,
+                "shooting": 0,
+                "melee": 0,
+                "platforming": 0,
+                "stealth": 0,
+                "puzzle": 50,
+                "strategy": 100,
+                "simulation": 0,
+                "management": 35,
+                "building": 0,
+                "crafting": 0,
+                "exploration": 20,
+                "driving": 0,
+                "racing": 0,
+                "farming": 0,
+                "customization": 65
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 80,
+
+            "systems": [
+                "skills",
+                "upgrades",
+                "metaProgression"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 30,
+            "intensity": 55,
+            "difficulty": 80,
+            "narrative": 25,
+
+            "atmosphere": [
+                "strategic",
+                "dark"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 1
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2019,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox",
+                "Nintendo",
+                "Mobile"
+            ],
+
+            "genres": [
+                "Roguelike",
+                "Strategy"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "balatro",
+
+        "title": "Balatro",
+
+        "visual": {
+
+            "styles": {
+
+                "pixelArt": 20,
+                "handDrawn": 20,
+                "anime": 0,
+                "celShaded": 20,
+                "stylized3D": 0,
+                "realistic": 0,
+                "lowPoly": 0,
+                "minimalist": 30,
+                "voxel": 0,
+                "retro": 60
+
+            },
+
+            "tones": {
+
+                "colorful": 75,
+                "dark": 35,
+                "gritty": 5,
+                "moody": 15,
+                "whimsical": 55,
+                "cozy": 20,
+                "peaceful": 20,
+                "surreal": 45,
+                "atmospheric": 35
+
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "2d",
+
+            "camera": [
+                "fixedCamera"
+            ],
+
+            "cameraFreedom": 5
+
+        },
+
+        "world": {
+
+            "structures": [
+                "roguelike"
+            ],
+
+            "freedom": 45,
+            "exploration": 10
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "strategy"
+            ],
+
+            "scores": {
+
+                "combat": 0,
+                "shooting": 0,
+                "melee": 0,
+                "platforming": 0,
+                "stealth": 0,
+                "puzzle": 50,
+                "strategy": 95,
+                "simulation": 5,
+                "management": 35,
+                "building": 0,
+                "crafting": 0,
+                "exploration": 0,
+                "driving": 0,
+                "racing": 0,
+                "farming": 0,
+                "customization": 70
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 85,
+
+            "systems": [
+                "upgrades",
+                "metaProgression",
+                "builds"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 35,
+            "intensity": 40,
+            "difficulty": 75,
+            "narrative": 5,
+
+            "atmosphere": [
+                "colorful",
+                "whimsical",
+                "surreal"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 1
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2024,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox",
+                "Nintendo",
+                "Mobile"
+            ],
+
+            "genres": [
+                "Roguelike",
+                "Strategy"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "forza-horizon-5",
+
+        "title": "Forza Horizon 5",
+
+        "visual": {
+
+            "styles": {
+
+                "pixelArt": 0,
+                "handDrawn": 0,
+                "anime": 0,
+                "celShaded": 0,
+                "stylized3D": 55,
+                "realistic": 85,
+                "lowPoly": 0,
+                "minimalist": 0,
+                "voxel": 0,
+                "retro": 10
+
+            },
+
+            "tones": {
+
+                "colorful": 95,
+                "dark": 5,
+                "gritty": 10,
+                "moody": 15,
+                "whimsical": 35,
+                "cozy": 20,
+                "peaceful": 25,
+                "surreal": 10,
+                "atmospheric": 75
+
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "3d",
+
+            "camera": [
+                "thirdPerson",
+                "firstPerson"
+            ],
+
+            "cameraFreedom": 90
+
+        },
+
+        "world": {
+
+            "structures": [
+                "openWorld"
+            ],
+
+            "freedom": 85,
+            "exploration": 65
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "racing",
+                "driving",
+                "exploration",
+                "customization"
+            ],
+
+            "scores": {
+
+                "combat": 0,
+                "shooting": 0,
+                "melee": 0,
+                "platforming": 0,
+                "stealth": 0,
+                "puzzle": 5,
+                "strategy": 20,
+                "simulation": 50,
+                "management": 10,
+                "building": 0,
+                "crafting": 0,
+                "exploration": 55,
+                "driving": 100,
+                "racing": 100,
+                "farming": 0,
+                "customization": 90
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 75,
+
+            "systems": [
+                "levels",
+                "equipment",
+                "upgrades",
+                "collections"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 100,
+            "intensity": 80,
+            "difficulty": 55,
+            "narrative": 20,
+
+            "atmosphere": [
+                "colorful",
+                "adventurous",
+                "funny"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer",
+                "onlineCoop",
+                "competitive"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 12
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2021,
+
+            "platforms": [
+                "PC",
+                "Xbox"
+            ],
+
+            "genres": [
+                "Racing",
+                "Open World",
+                "Simulation"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "animal-crossing-new-horizons",
+
+        "title": "Animal Crossing: New Horizons",
+
+        "visual": {
+
+            "styles": {
+
+                "pixelArt": 0,
+                "handDrawn": 20,
+                "anime": 20,
+                "celShaded": 60,
+                "stylized3D": 90,
+                "realistic": 0,
+                "lowPoly": 25,
+                "minimalist": 20,
+                "voxel": 0,
+                "retro": 15
+
+            },
+
+            "tones": {
+
+                "colorful": 100,
+                "dark": 0,
+                "gritty": 0,
+                "moody": 5,
+                "whimsical": 95,
+                "cozy": 100,
+                "peaceful": 100,
+                "surreal": 10,
+                "atmospheric": 80
+
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "3d",
+
+            "camera": [
+                "thirdPerson"
+            ],
+
+            "cameraFreedom": 80
+
+        },
+
+        "world": {
+
+            "structures": [
+                "sandbox",
+                "hubBased"
+            ],
+
+            "freedom": 100,
+            "exploration": 65
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "building",
+                "customization",
+                "farming",
+                "simulation"
+            ],
+
+            "scores": {
+
+                "combat": 0,
+                "shooting": 0,
+                "melee": 0,
+                "platforming": 0,
+                "stealth": 0,
+                "puzzle": 10,
+                "strategy": 25,
+                "simulation": 85,
+                "management": 35,
+                "building": 90,
+                "crafting": 85,
+                "exploration": 60,
+                "driving": 0,
+                "racing": 0,
+                "farming": 80,
+                "customization": 100
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 40,
+
+            "systems": [
+                "collections",
+                "building",
+                "crafting",
+                "relationships"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 10,
+            "intensity": 10,
+            "difficulty": 15,
+            "narrative": 50,
+
+            "atmosphere": [
+                "cozy",
+                "peaceful",
+                "colorful",
+                "whimsical"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer",
+                "localCoop",
+                "onlineCoop"
+            ],
+
+            "importance": 65,
+
+            "playerCount": {
+                "min": 1,
+                "max": 8
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2020,
+
+            "platforms": [
+                "Nintendo"
+            ],
+
+            "genres": [
+                "Simulation",
+                "Building"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "factorio",
+
+        "title": "Factorio",
+
+        "visual": {
+
+            "styles": {
+
+                "pixelArt": 25,
+                "handDrawn": 55,
+                "anime": 0,
+                "celShaded": 0,
+                "stylized3D": 0,
+                "realistic": 10,
+                "lowPoly": 20,
+                "minimalist": 15,
+                "voxel": 0,
+                "retro": 25
+
+            },
+
+            "tones": {
+
+                "colorful": 25,
+                "dark": 45,
+                "gritty": 65,
+                "moody": 40,
+                "whimsical": 10,
+                "cozy": 5,
+                "peaceful": 10,
+                "surreal": 0,
+                "atmospheric": 45
+
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "2d",
+
+            "camera": [
+                "topDown"
+            ],
+
+            "cameraFreedom": 70
+
+        },
+
+        "world": {
+
+            "structures": [
+                "sandbox",
+                "procedural"
+            ],
+
+            "freedom": 95,
+            "exploration": 55
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "strategy",
+                "building",
+                "management",
+                "crafting",
+                "simulation"
+            ],
+
+            "scores": {
+
+                "combat": 30,
+                "shooting": 10,
+                "melee": 10,
+                "platforming": 0,
+                "stealth": 0,
+                "puzzle": 60,
+                "strategy": 100,
+                "simulation": 100,
+                "management": 100,
+                "building": 100,
+                "crafting": 95,
+                "exploration": 35,
+                "driving": 10,
+                "racing": 0,
+                "farming": 0,
+                "customization": 80
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 90,
+
+            "systems": [
+                "technology",
+                "upgrades",
+                "crafting",
+                "building"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 25,
+            "intensity": 60,
+            "difficulty": 75,
+            "narrative": 10,
+
+            "atmosphere": [
+                "strategic"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer",
+                "onlineCoop"
+            ],
+
+            "importance": 55,
+
+            "playerCount": {
+                "min": 1,
+                "max": 16
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2020,
+
+            "platforms": [
+                "PC"
+            ],
+
+            "genres": [
+                "Strategy",
+                "Simulation",
+                "Building"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "portal-2",
+
+        "title": "Portal 2",
+
+        "visual": {
+
+            "styles": {
+
+                "pixelArt": 0,
+                "handDrawn": 0,
+                "anime": 0,
+                "celShaded": 0,
+                "stylized3D": 50,
+                "realistic": 50,
+                "lowPoly": 20,
+                "minimalist": 25,
+                "voxel": 0,
+                "retro": 15
+
+            },
+
+            "tones": {
+
+                "colorful": 35,
+                "dark": 50,
+                "gritty": 20,
+                "moody": 50,
+                "whimsical": 70,
+                "cozy": 10,
+                "peaceful": 25,
+                "surreal": 20,
+                "atmospheric": 65
+
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "3d",
+
+            "camera": [
+                "firstPerson"
+            ],
+
+            "cameraFreedom": 95
+
+        },
+
+        "world": {
+
+            "structures": [
+                "levelBased"
+            ],
+
+            "freedom": 35,
+            "exploration": 20
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "puzzle",
+                "platforming"
+            ],
+
+            "scores": {
+
+                "combat": 0,
+                "shooting": 5,
+                "melee": 0,
+                "platforming": 35,
+                "stealth": 0,
+                "puzzle": 100,
+                "strategy": 75,
+                "simulation": 0,
+                "management": 0,
+                "building": 10,
+                "crafting": 0,
+                "exploration": 15,
+                "driving": 0,
+                "racing": 0,
+                "farming": 0,
+                "customization": 5
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 45,
+
+            "systems": [
+                "abilities"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 45,
+            "intensity": 45,
+            "difficulty": 60,
+            "narrative": 80,
+
+            "atmosphere": [
+                "whimsical",
+                "funny",
+                "surreal"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer",
+                "onlineCoop"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 2
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2011,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox",
+                "Nintendo"
+            ],
+
+            "genres": [
+                "Puzzle",
+                "Platformer",
+                "Co-op"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "death-stranding",
+
+        "title": "Death Stranding",
+
+        "visual": {
+
+            "styles": {
+
+                "pixelArt": 0,
+                "handDrawn": 0,
+                "anime": 5,
+                "celShaded": 0,
+                "stylized3D": 15,
+                "realistic": 95,
+                "lowPoly": 0,
+                "minimalist": 0,
+                "voxel": 0,
+                "retro": 0
+
+            },
+
+            "tones": {
+
+                "colorful": 30,
+                "dark": 70,
+                "gritty": 55,
+                "moody": 90,
+                "whimsical": 5,
+                "cozy": 10,
+                "peaceful": 45,
+                "surreal": 80,
+                "atmospheric": 100
+
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "3d",
+
+            "camera": [
+                "thirdPerson"
+            ],
+
+            "cameraFreedom": 95
+
+        },
+
+        "world": {
+
+            "structures": [
+                "openWorld"
+            ],
+
+            "freedom": 90,
+            "exploration": 100
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "exploration",
+                "simulation",
+                "management"
+            ],
+
+            "scores": {
+
+                "combat": 25,
+                "shooting": 30,
+                "melee": 25,
+                "platforming": 20,
+                "stealth": 45,
+                "puzzle": 30,
+                "strategy": 45,
+                "simulation": 55,
+                "management": 45,
+                "building": 35,
+                "crafting": 45,
+                "exploration": 100,
+                "driving": 30,
+                "racing": 5,
+                "farming": 0,
+                "customization": 25
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 65,
+
+            "systems": [
+                "equipment",
+                "upgrades",
+                "unlockingAreas",
+                "collections"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 30,
+            "intensity": 55,
+            "difficulty": 45,
+            "narrative": 100,
+
+            "atmosphere": [
+                "surreal",
+                "mysterious",
+                "atmospheric",
+                "emotional"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer",
+                "asynchronous"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 1
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2019,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox"
+            ],
+
+            "genres": [
+                "Adventure",
+                "Exploration",
+                "Narrative"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "undertale",
+
+        "title": "Undertale",
+
+        "visual": {
+
+            "styles": {
+
+                "pixelArt": 100,
+                "handDrawn": 30,
+                "anime": 10,
+                "celShaded": 0,
+                "stylized3D": 0,
+                "realistic": 0,
+                "lowPoly": 0,
+                "minimalist": 25,
+                "voxel": 0,
+                "retro": 100
+
+            },
+
+            "tones": {
+
+                "colorful": 50,
+                "dark": 40,
+                "gritty": 10,
+                "moody": 40,
+                "whimsical": 80,
+                "cozy": 30,
+                "peaceful": 35,
+                "surreal": 80,
+                "atmospheric": 70
+
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "2d",
+
+            "camera": [
+                "topDown"
+            ],
+
+            "cameraFreedom": 35
+
+        },
+
+        "world": {
+
+            "structures": [
+                "linear",
+                "branching"
+            ],
+
+            "freedom": 70,
+            "exploration": 45
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "combat",
+                "puzzle",
+                "exploration"
+            ],
+
+            "scores": {
+
+                "combat": 60,
+                "shooting": 20,
+                "melee": 15,
+                "platforming": 15,
+                "stealth": 0,
+                "puzzle": 70,
+                "strategy": 45,
+                "simulation": 0,
+                "management": 0,
+                "building": 0,
+                "crafting": 0,
+                "exploration": 45,
+                "driving": 0,
+                "racing": 0,
+                "farming": 0,
+                "customization": 15
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 45,
+
+            "systems": [
+                "choices",
+                "levels"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 40,
+            "intensity": 30,
+            "difficulty": 50,
+            "narrative": 95,
+
+            "atmosphere": [
+                "whimsical",
+                "surreal",
+                "emotional"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 1
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2015,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox",
+                "Nintendo"
+            ],
+
+            "genres": [
+                "RPG",
+                "Narrative",
+                "Adventure"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "terraria",
+
+        "title": "Terraria",
+
+        "visual": {
+
+            "styles": {
+
+                "pixelArt": 100,
+                "handDrawn": 40,
+                "anime": 0,
+                "celShaded": 0,
+                "stylized3D": 0,
+                "realistic": 0,
+                "lowPoly": 0,
+                "minimalist": 10,
+                "voxel": 0,
+                "retro": 80
+
+            },
+
+            "tones": {
+
+                "colorful": 80,
+                "dark": 45,
+                "gritty": 25,
+                "moody": 30,
+                "whimsical": 65,
+                "cozy": 40,
+                "peaceful": 35,
+                "surreal": 25,
+                "atmospheric": 60
+
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "2d",
+
+            "camera": [
+                "sideScroller"
+            ],
+
+            "cameraFreedom": 45
+
+        },
+
+        "world": {
+
+            "structures": [
+                "sandbox",
+                "procedural"
+            ],
+
+            "freedom": 100,
+            "exploration": 95
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "building",
+                "crafting",
+                "combat",
+                "exploration"
+            ],
+
+            "scores": {
+
+                "combat": 70,
+                "shooting": 50,
+                "melee": 65,
+                "platforming": 55,
+                "stealth": 0,
+                "puzzle": 15,
+                "strategy": 30,
+                "simulation": 15,
+                "management": 10,
+                "building": 85,
+                "crafting": 95,
+                "exploration": 95,
+                "driving": 0,
+                "racing": 0,
+                "farming": 25,
+                "customization": 85
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 80,
+
+            "systems": [
+                "equipment",
+                "skills",
+                "upgrades",
+                "crafting",
+                "collections"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 60,
+            "intensity": 55,
+            "difficulty": 60,
+            "narrative": 15,
+
+            "atmosphere": [
+                "colorful",
+                "adventurous",
+                "whimsical"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer",
+                "onlineCoop"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 8
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2011,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox",
+                "Nintendo",
+                "Mobile"
+            ],
+
+            "genres": [
+                "Sandbox",
+                "Survival",
+                "Building"
+            ]
+
+        }
+
+    },
+
+
+    {
+        "id": "red-dead-redemption-2",
+
+        "title": "Red Dead Redemption 2",
+
+        "visual": {
+
+            "styles": {
+
+                "pixelArt": 0,
+                "handDrawn": 0,
+                "anime": 0,
+                "celShaded": 0,
+                "stylized3D": 20,
+                "realistic": 100,
+                "lowPoly": 0,
+                "minimalist": 0,
+                "voxel": 0,
+                "retro": 0
+
+            },
+
+            "tones": {
+
+                "colorful": 35,
+                "dark": 45,
+                "gritty": 90,
+                "moody": 90,
+                "whimsical": 15,
+                "cozy": 25,
+                "peaceful": 55,
+                "surreal": 5,
+                "atmospheric": 100
+
+            }
+
+        },
+
+        "presentation": {
+
+            "dimension": "3d",
+
+            "camera": [
+                "thirdPerson",
+                "firstPerson"
+            ],
+
+            "cameraFreedom": 95
+
+        },
+
+        "world": {
+
+            "structures": [
+                "openWorld",
+                "branching"
+            ],
+
+            "freedom": 85,
+            "exploration": 95
+
+        },
+
+        "gameplay": {
+
+            "activities": [
+                "combat",
+                "exploration",
+                "customization",
+                "crafting"
+            ],
+
+            "scores": {
+
+                "combat": 70,
+                "shooting": 85,
+                "melee": 50,
+                "platforming": 10,
+                "stealth": 30,
+                "puzzle": 10,
+                "strategy": 25,
+                "simulation": 55,
+                "management": 25,
+                "building": 5,
+                "crafting": 50,
+                "exploration": 90,
+                "driving": 45,
+                "racing": 10,
+                "farming": 10,
+                "customization": 50
+
+            }
+
+        },
+
+        "progression": {
+
+            "intensity": 75,
+
+            "systems": [
+                "levels",
+                "equipment",
+                "skills",
+                "upgrades",
+                "choices"
+            ]
+
+        },
+
+        "experience": {
+
+            "pace": 35,
+            "intensity": 60,
+            "difficulty": 45,
+            "narrative": 100,
+
+            "atmosphere": [
+                "dark",
+                "gritty",
+                "emotional",
+                "atmospheric"
+            ]
+
+        },
+
+        "social": {
+
+            "modes": [
+                "singlePlayer"
+            ],
+
+            "playerCount": {
+                "min": 1,
+                "max": 1
+            }
+
+        },
+
+        "metadata": {
+
+            "releaseYear": 2018,
+
+            "platforms": [
+                "PC",
+                "PlayStation",
+                "Xbox"
+            ],
+
+            "genres": [
+                "Action",
+                "Adventure",
+                "Open World"
+            ]
+
+        }
+
+    }
+
+]

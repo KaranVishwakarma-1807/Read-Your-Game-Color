@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assessment · Play Your Color</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Assessment CSS -->
+    <link rel="stylesheet" href="css/assessment.css">
+</head>
+
+<body class="assessment-page">
+    <header class="assessment-header">
+        <a href="index.html" class="logo">
+            PLAY<span>YOUR</span>COLOR
+        </a>
+
+        <div class="question-counter">
+            <span id="currentQuestion">
+                1
+            </span>
+
+            <span class="counter-divider">
+                /
+            </span>
+
+            <span id="totalQuestions">
+                1
+            </span>
+        </div>
+    </header>
+
+
+    <main class="assessment-main">
+        <div class="assessment-container">
+            <!-- Progress -->
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <!-- Question -->
+
+            <section class="question-section" id="questionSection">
+                <p class="question-section-label" id="questionSectionLabel">
+                    HOW YOU PLAY
+                </p>
+
+                <p class="question-label">
+                    QUESTION
+                </p>
+
+                <h1 class="question-text" id="questionText">
+                    Loading...
+                </h1>
+
+                <!-- Answer buttons -->
+                <div class="answers" id="answersContainer">
+                </div>
+
+                <div class="question-navigation">
+                    <button id="backButton" class="secondary-button" type="button" disabled>
+                        ← Back
+                    </button>
+                </div>
+            </section>
+
+            <!-- Bottom information -->
+            <div class="assessment-footer">
+                <p>
+                    There are no right or wrong answers.
+                </p>
+
+                <p>
+                    Choose what feels most like you.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/colors.js"></script>
+    <script src="js/preferences.js"></script>
+
+    <script src="js/questions.js"></script>
+    <script src="js/preference-questions.js"></script>
+    <script src="js/constraint-questions.js"></script>
+    <script src="js/assessment-data.js"></script>
+
+    <script src="js/color-engine.js"></script>
+
+    <script src="js/games-loader.js"></script>
+    <script src="js/game-rubric.js"></script>
+    <script src="js/game-profile.js"></script>
+    <script src="js/recommendation-engine.js"></script>
+
+    <script src="js/assessment.js"></script>
+
+</body>
+</html>

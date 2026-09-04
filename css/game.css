@@ -1,0 +1,752 @@
+/* Game Detail Page */
+
+.site-header {
+  position: relative;
+  z-index: 10;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header-inner {
+  width: min(1250px, calc(100% - 48px));
+  min-height: 76px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-logo,
+.header-link {
+  color: var(--text-primary);
+  font-family: "Space Grotesk", sans-serif;
+  text-decoration: none;
+}
+
+.site-logo {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.header-link {
+  padding: 9px 12px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  color: var(--text-secondary);
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.site-logo:hover,
+.site-logo:focus-visible {
+  color: var(--result-color, var(--text-primary));
+}
+
+.header-link:hover,
+.header-link:focus-visible {
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-primary);
+}
+
+/* Container */
+.game-container {
+    width: min(1100px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+
+/* Hero */
+.game-hero {
+    padding: 80px 0 100px;
+}
+
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 35px;
+    color: var(--text-muted);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+.back-link:hover {
+    color: var(--text-primary);
+}
+
+
+/* Game Visual */
+.game-hero-visual {
+    width: 100%;
+    height: min(460px, 50vw);
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:
+        1px solid
+        var(--border);
+    border-radius: 24px;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255,255,255,0.08),
+            rgba(255,255,255,0.01)
+        );
+    margin-bottom: 50px;
+}
+
+
+.game-hero-visual span {
+    color: var(--result-color);
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+    font-size: clamp(100px, 18vw, 220px);
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+
+/* Title */
+.game-title {
+    margin-top: 18px;
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+    font-size: clamp(55px, 9vw, 110px);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+}
+
+
+.game-genres {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+
+.game-genre {
+    padding: 7px 10px;
+    border:
+        1px solid
+        var(--border);
+    border-radius: 7px;
+    color: var(--text-muted);
+    font-size: 11px;
+}
+
+
+/* Match */
+.game-match {
+    margin-top: 45px;
+    color: var(--result-color);
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+    font-size: clamp(55px, 10vw, 100px);
+    font-weight: 700;
+    line-height: 0.9;
+}
+
+
+.game-match-label {
+    margin-top: 8px;
+    color: var(--text-muted);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+/* Description*/
+.game-description {
+    max-width: 720px;
+    margin-top: 25px;
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* Section */
+.game-section {
+    padding: 100px 0;
+    border-top:
+        1px solid
+        var(--border);
+}
+
+
+/* Why Card */
+.game-why-card {
+    margin-top: 55px;
+    max-width: 800px;
+    padding: 35px;
+    border:
+        1px solid
+        var(--border);
+    border-radius: 18px;
+    background: var(--background-soft);
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* Match Breakdown */
+.game-breakdown {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+
+.breakdown-card {
+    padding: 25px;
+    border:
+        1px solid
+        var(--border);
+    border-radius: 16px;
+    background: var(--background-soft);
+}
+
+
+.breakdown-label {
+    color: var(--text-muted);
+    font-size: 11px;
+}
+
+
+.breakdown-score {
+    margin-top: 12px;
+    color: var(--result-color);
+    font-family:
+        "Space Grotesk",
+        sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+
+/* Game Profile */
+.game-profile-grid {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+
+.game-profile-card {
+    padding: 25px;
+    border:
+        1px solid
+        var(--border);
+    border-radius: 16px;
+    background: var(--background-soft);
+}
+
+
+.game-profile-title {
+    margin-bottom: 18px;
+    color: var(--text-primary);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.game-profile-line {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 9px 0;
+    border-bottom:
+        1px solid
+        rgba(255,255,255,0.05);
+}
+
+
+.game-profile-line:last-child {
+    border-bottom: none;
+}
+
+
+.game-profile-label {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+
+.game-profile-value {
+    color: var(--text-secondary);
+    font-size: 12px;
+    text-align: right;
+}
+
+
+/* Friction */
+.game-friction {
+    margin-top: 55px;
+    max-width: 800px;
+    padding: 30px;
+    border:
+        1px solid
+        var(--border);
+    border-radius: 18px;
+    background: rgba(255,255,255,0.02);
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+
+/* Mobile */
+@media (max-width: 700px) {
+    .game-container {
+        width: min(100% - 30px, 1100px);
+    }
+
+    .game-breakdown,
+    .game-profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .game-hero-visual {
+        min-height: 220px;
+    }
+
+}
+
+#gameHeroVisual {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.game-hero {
+  position: relative;
+  min-height: 680px;
+  overflow: hidden;
+}
+
+.game-hero-visual {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      135deg,
+      var(--result-color, #777),
+      #111
+    );
+  background-size: cover;
+  background-position: center;
+}
+
+.game-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.92) 0%,
+      rgba(0, 0, 0, 0.72) 40%,
+      rgba(0, 0, 0, 0.25) 75%,
+      rgba(0, 0, 0, 0.45) 100%
+    );
+}
+
+.game-initial {
+  position: absolute;
+  left: 65%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 260px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.08);
+  user-select: none;
+}
+
+.game-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1250px;
+  min-height: 680px;
+  margin: 0 auto;
+  padding: 180px 40px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game-tier {
+  margin-bottom: 14px;
+  color: var(--result-color);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.game-hero h1 {
+  max-width: 800px;
+  margin: 0;
+  font-size: clamp(56px, 8vw, 100px);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.game-match-row {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.game-match {
+  color: white;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.game-match-label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.game-genres {
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+.game-description {
+  max-width: 650px;
+  margin-top: 28px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.game-detail {
+  background: var(--page-background, #0a0a0a);
+}
+
+.game-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 32px;
+}
+
+.section-heading {
+  margin-bottom: 42px;
+}
+
+.section-eyebrow {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--result-color);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: clamp(34px, 5vw, 56px);
+  line-height: 1;
+}
+
+
+.game-why {
+  max-width: 850px;
+  padding: 34px;
+  border-left: 3px solid var(--result-color);
+  background: rgba(255, 255, 255, 0.035);
+  border-radius: 0 16px 16px 0;
+  font-size: 23px;
+  line-height: 1.6;
+}
+
+.game-why strong {
+  color: var(--result-color);
+}
+
+
+.game-breakdown {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.match-breakdown-card {
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.match-breakdown-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.match-breakdown-name {
+  font-size: 14px;
+}
+
+.match-breakdown-score {
+  color: var(--result-color);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.match-bar {
+  width: 100%;
+  height: 5px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.match-bar-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--result-color);
+  transition: width 0.7s ease;
+}
+
+
+
+.game-profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.game-profile-card {
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.game-profile-label {
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.game-profile-value {
+  color: white;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.friction-section {
+  padding-bottom: 140px;
+}
+
+.game-friction {
+  padding: 28px;
+  border: 1px solid rgba(255, 180, 80, 0.2);
+  border-radius: 16px;
+  background: rgba(255, 180, 80, 0.04);
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.7;
+}
+
+
+@media (max-width: 800px) {
+  .game-hero {
+    min-height: 620px;
+  }
+
+  .game-hero-content {
+    min-height: 620px;
+    padding:
+      160px 24px 70px;
+  }
+
+  .game-hero h1 {
+    font-size: 58px;
+  }
+
+  .game-section {
+    padding:
+      70px 20px;
+  }
+
+  .game-breakdown {
+    grid-template-columns: 1fr;
+  }
+
+  .game-profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .game-why {
+    font-size: 19px;
+    padding: 24px;
+  }
+}
+
+
+
+.section-description {
+  max-width: 650px;
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+.dna-comparison {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+.dna-row {
+  padding: 22px;
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+
+.dna-row-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.dna-label {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.dna-values {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 12px;
+}
+
+.dna-track {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.dna-player-track,
+.dna-game-track {
+  height: 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.dna-player-track span,
+.dna-game-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  transition: width 0.8s ease;
+}
+
+.dna-player-track span {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.dna-game-track span {
+  background: var(--result-color);
+}
+
+
+.dna-row-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+
+.dna-similarity {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.dna-similarity-score {
+  color: var(--result-color);
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.dna-similarity-text {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+
+.dna-highlight {
+  margin-bottom: 28px;
+  padding: 24px;
+  border-radius: 16px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.05),
+      rgba(255,255,255,0.015)
+    );
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+}
+
+.dna-highlight-label {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--result-color);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.dna-highlight strong {
+  font-size: 24px;
+}
+
+.dna-highlight p {
+  max-width: 650px;
+  margin: 8px 0 0;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.6;
+}

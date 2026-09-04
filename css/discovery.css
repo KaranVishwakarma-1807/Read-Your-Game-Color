@@ -1,0 +1,377 @@
+.discovery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.brand,
+.results-link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.discovery-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 40px 120px;
+}
+
+.discovery-intro {
+  margin-bottom: 70px;
+}
+
+.discovery-intro h1 {
+  max-width: 700px;
+  margin: 8px 0 16px;
+  font-size: clamp(48px, 7vw, 90px);
+  line-height: 0.95;
+}
+
+.discovery-intro p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 18px;
+}
+
+
+.discovery-layout {
+  display: grid;
+  grid-template-columns: 270px minmax(0, 1fr);
+  gap: 50px;
+}
+
+.filter-panel {
+  position: sticky;
+  top: 30px;
+  align-self: start;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.filter-header h2 {
+  margin: 0;
+}
+
+.clear-filters {
+  border: 0;
+  background: none;
+  color: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+  font-size: 12px;
+}
+
+
+.filter-group {
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.filter-group h3 {
+  margin: 0 0 13px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 13px;
+}
+
+.filter-option input {
+  accent-color: var(--result-color, white);
+}
+
+
+.discovery-results {
+  min-width: 0;
+}
+
+.results-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#sortGames {
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: #111;
+  color: white;
+}
+
+.discovery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+
+.discovery-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  overflow: hidden;
+  border:
+    1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background:
+    rgba(255, 255, 255, 0.025);
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.discovery-card:hover {
+  transform: translateY(-6px);
+  border-color:
+    var(--result-color, white);
+}
+
+.discovery-card-media {
+  position: relative;
+  height: 230px;
+}
+
+.discovery-card-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.discovery-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(
+      135deg,
+      var(--result-color, #777),
+      #111
+    );
+  font-size: 70px;
+  font-weight: 900;
+}
+
+.discovery-score {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  padding: 8px 11px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.discovery-card-content {
+  padding: 20px;
+}
+
+.discovery-year {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 11px;
+}
+
+.discovery-card h3 {
+  margin: 5px 0 12px;
+  font-size: 22px;
+}
+
+.discovery-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.discovery-genres span {
+  padding: 5px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 10px;
+}
+
+.discovery-card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+
+@media (max-width: 1000px) {
+  .discovery-layout {
+    grid-template-columns: 1fr;
+  }
+  .filter-panel {
+    position: static;
+  }
+  .discovery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+@media (max-width: 650px) {
+  .discovery-header {
+    padding: 20px;
+  }
+  .discovery-page {
+    padding: 55px 20px 80px;
+  }
+  .discovery-grid {
+    grid-template-columns: 1fr;
+  }
+  .discovery-intro {
+    margin-bottom: 45px;
+  }
+}
+
+
+.results-toolbar {
+  display: grid;
+  grid-template-columns: 1fr 280px auto;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.discovery-search input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  color: white;
+  outline: none;
+  font-size: 13px;
+}
+
+.discovery-search input:focus {
+  border-color: var(--result-color, white);
+}
+
+
+.active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 34px;
+  margin-bottom: 24px;
+}
+
+.active-filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border:
+    1px solid
+    var(--result-color, rgba(255,255,255,.2));
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: white;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.active-filter-chip span {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 14px;
+}
+
+
+.empty-state {
+  grid-column:
+    1 / -1;
+  padding:
+    100px 30px;
+  text-align: center;
+  border:
+    1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  background:
+    rgba(255, 255, 255, 0.025);
+}
+
+.empty-state-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--result-color, white);
+  font-weight: 900;
+}
+
+.empty-state h2 {
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  margin-bottom: 22px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.empty-clear {
+  padding: 11px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--result-color, white);
+  color: #111;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+
+@media (max-width: 700px) {
+  .results-toolbar {
+    grid-template-columns: 1fr;
+  }
+  .discovery-search {
+    order: 2;
+  }
+  #sortGames {
+    order: 3;
+  }
+}
