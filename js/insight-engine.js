@@ -166,3 +166,68 @@ function buildGameInsights(playerTraits, gameProfile) {
 function getTopMatchReasons(playerTraits, gameProfile, limit = 3) {
   return getStrongMatches(playerTraits, gameProfile, 70).slice(0, limit);
 }
+
+
+function calculateMatchConfidence(game) {
+
+  let availableSignals = 0;
+  let totalSignals = 0;
+
+  const checks = [
+
+    game.visual?.styles,
+    game.visual?.tones,
+
+    game.presentation,
+
+    game.world,
+
+    game.gameplay,
+
+    game.progression,
+
+    game.experience,
+
+    game.social
+
+  ];
+
+  checks.forEach(signal => {
+
+    totalSignals++;
+
+    if (
+      signal &&
+      Object.keys(signal).length > 0
+    ) {
+      availableSignals++;
+    }
+
+  });
+
+  if (totalSignals === 0) {
+    return 0;
+  }
+
+  return Math.round(
+    (availableSignals /
+      totalSignals) *
+    100
+  );
+}
+
+
+function getConfidenceLabel(
+  confidence
+) {
+
+  if (confidence >= 90) {
+    return "High confidence";
+  }
+
+  if (confidence >= 70) {
+    return "Good confidence";
+  }
+
+  return "Limited data";
+}
