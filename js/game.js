@@ -175,6 +175,43 @@ function renderFriction(recommendation) {
 }
 
 
+function createInsightCard(type, title, text) {
+
+  if (!text) {
+    return "";
+  }
+
+  return `
+    <article class="insight-card insight-${type}">
+      <span class="insight-label">
+        ${title}
+      </span>
+      <p>
+        ${text}
+      </p>
+    </article>
+  `;
+}
+
+
+function renderGameInsights(insights) {
+  const container = document.getElementById("gameInsights");
+
+  if (!container) {
+    return;
+  }
+
+  container.innerHTML = `
+    ${createInsightCard("match", "STRONG MATCHES", insights.matchInsight)}
+
+    ${createInsightCard("growth", "OUTSIDE YOUR USUAL ZONE", insights.growthInsight)}
+
+    ${createInsightCard("friction", "POSSIBLE FRICTION", insights.frictionInsight)}
+
+  `;
+}
+
+
 function getStrongestDNAOverlap(playerTraits, gameProfile) {
   let strongest = null;
 
@@ -229,6 +266,72 @@ function createDNAHighlight(playerTraits, gameProfile) {
 }
 
 
+// Add a perdict
+function getMatchVerdict(score) {
+
+  if (score >= 90) {
+
+    return {
+      title: "Natural Fit",
+      text:
+        "This game lines up extremely well with the way you like to play."
+    };
+
+  }
+
+  if (score >= 80) {
+
+    return {
+      title: "Strong Fit",
+      text:
+        "A lot of this game's design aligns naturally with your gaming profile."
+    };
+
+  }
+
+  if (score >= 70) {
+
+    return {
+      title: "Good Fit",
+      text:
+        "This game fits several important parts of your gaming personality."
+    };
+
+  }
+
+  if (score >= 60) {
+
+    return {
+      title: "Interesting Match",
+      text:
+        "There are some strong connections, although this game may push you outside your usual preferences."
+    };
+
+  }
+
+  return {
+    title: "Wild Card",
+    text:
+      "This game sits outside your usual comfort zone, but that may be exactly what makes it interesting."
+  };
+}
+
+function renderGameVerdict(score) {
+
+  const verdict = getMatchVerdict(score);
+
+  gameVerdict.innerHTML = `
+    <strong>
+      ${verdict.title}
+    </strong>
+    <p>
+      ${verdict.text}
+    </p>
+  `;
+}
+renderGameVerdict(match.score);
+
+
 async function initializeGamePage() {
     if (!gameId) {
         showPageState(
@@ -277,6 +380,18 @@ async function initializeGamePage() {
 
     const recommendationProfile = createRecommendationProfile(profile);
     const gameMotivationProfile = getGameMotivationProfile(game);
+
+    if (gameMotivationProfile) {
+        renderDNASimilarity(playerProfile.traits, gameMotivationProfile);
+
+        renderDNAComparison(playerProfile.traits, gameMotivationProfile);
+
+        const insights = buildGameInsights(playerProfile.traits, gameMotivationProfile);
+
+        renderGameInsights(insights);
+    }
+
+
     let match;
 
     try {

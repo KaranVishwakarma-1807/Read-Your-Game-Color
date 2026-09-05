@@ -787,3 +787,75 @@
   color: rgba(255, 255, 255, 0.5);
   line-height: 1.6;
 }
+
+
+
+.game-insights {
+  display: grid;
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.insight-card {
+  padding: 26px;
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.insight-label {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--result-color);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.insight-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.insight-card strong {
+  color: white;
+}
+
+
+@media (max-width: 850px) {
+  .game-insights {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.game-verdict {
+  max-width: 620px;
+  margin-top: 30px;
+  padding: 20px 22px;
+  border-left:
+    2px solid
+    var(--result-color);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.game-verdict strong {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--result-color);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.game-verdict p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.6;
+}
