@@ -153,17 +153,13 @@ function createRecommendationCard(recommendation) {
     const game = recommendation.game;
     const tier = recommendation.tier || getRecommendationTier(recommendation.score);
     const explanation = buildRecommendationExplanation(recommendation);
+    const reasons = getTopMatchReasons(profile.traits, GAME_PROFILES.find(gameProfile => gameProfile.id === game.id));
+    const reasonsHTML = reasons.map(reason => `<span class="match-tag">${reason.label}</span>`).join("");
     const card = document.createElement("a");
-    const reasons = getTopMatchReasons(playerProfile.traits, GAME_PROFILES.find(profile => profile.id === recommendation.game.id));
     card.className = "game-card recommendation-card-clickable";
     card.href = `game.html?id=${encodeURIComponent(game.id)}`;
     card.setAttribute("aria-label", `View ${game.title}`);
-    card.innerHTML = `<div class="game-card-media">${getGameCover(game) ? `<img src="${getGameCover(game)}" alt="${game.title}" class="game-card-image" loading="lazy">` : `<div class="game-card-placeholder"><span>${game.title.charAt(0)}</span></div>`}<div class="game-card-overlay"></div><div class="game-card-match">${Math.round(recommendation.score)}%</div></div><div class="game-card-content"><div class="game-card-tier">${tier.label}</div><h3 class="game-card-title">${game.title}</h3><div class="game-card-genres">${(game.metadata?.genres || []).slice(0, 3).map(genre => `<span>${genre}</span>`).join("")}</div><p class="recommendation-reason">${explanation.why}</p></div>`;
-    const reasonsHTML = reasons.map(reason =>
-        `<span class="match-tag">
-          ${reason.label}
-        </span>`
-    ).join("");
+    card.innerHTML = `<div class="game-card-media">${getGameCover(game) ? `<img src="${getGameCover(game)}" alt="${game.title}" class="game-card-image" loading="lazy">` : `<div class="game-card-placeholder"><span>${game.title.charAt(0)}</span></div>`}<div class="game-card-overlay"></div><div class="game-card-match">${Math.round(recommendation.score)}%</div></div><div class="game-card-content"><div class="game-card-tier">${tier.label}</div><h3 class="game-card-title">${game.title}</h3><div class="game-card-genres">${(game.metadata?.genres || []).slice(0, 3).map(genre => `<span>${genre}</span>`).join("")}</div>${reasonsHTML ? `<div class="recommendation-tags">${reasonsHTML}</div>` : ""}<p class="recommendation-reason">${explanation.why}</p></div>`;
     return card;
 }
 

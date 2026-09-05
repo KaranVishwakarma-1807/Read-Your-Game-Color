@@ -72,11 +72,11 @@ function loadPlayerProfile() {
 }
 
 
-function getGameMotivationProfile(game){
+function getLoadedGameMotivationProfile(game){
   if (!game) {
     return null;
   }
-  return GAME_PROFILES.find(profile => profile.id === game.id ) || null;
+  return GAME_PROFILES.find(profile => profile.id === game.id)?.motivation || null;
 }
 
 
@@ -383,7 +383,7 @@ async function initializeGamePage() {
     }
 
     const recommendationProfile = createRecommendationProfile(profile);
-    const gameMotivationProfile = getGameMotivationProfile(game);
+    const gameMotivationProfile = getLoadedGameMotivationProfile(game);
 
     if (gameMotivationProfile) {
       renderDNASimilarity(profile.traits, gameMotivationProfile);
