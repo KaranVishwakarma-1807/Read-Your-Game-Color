@@ -8,6 +8,7 @@ const gameMatch = document.getElementById("gameMatch");
 const gameMatchLabel = document.getElementById("gameMatchLabel");
 const gameTier = document.getElementById("gameTier");
 const gameDescription = document.getElementById("gameDescription");
+const gameVerdict = document.getElementById("gameVerdict");
 const gameWhy = document.getElementById("gameWhy");
 const gameBreakdown = document.getElementById("gameBreakdown");
 const gameProfile = document.getElementById("gameProfile");
@@ -318,6 +319,10 @@ function getMatchVerdict(score) {
 
 function renderGameVerdict(score) {
 
+  if (!gameVerdict) {
+    return;
+  }
+
   const verdict = getMatchVerdict(score);
 
   gameVerdict.innerHTML = `
@@ -329,7 +334,6 @@ function renderGameVerdict(score) {
     </p>
   `;
 }
-renderGameVerdict(match.score);
 
 
 async function initializeGamePage() {
@@ -382,11 +386,11 @@ async function initializeGamePage() {
     const gameMotivationProfile = getGameMotivationProfile(game);
 
     if (gameMotivationProfile) {
-        renderDNASimilarity(playerProfile.traits, gameMotivationProfile);
+      renderDNASimilarity(profile.traits, gameMotivationProfile);
 
-        renderDNAComparison(playerProfile.traits, gameMotivationProfile);
+      renderDNAComparison(profile.traits, gameMotivationProfile);
 
-        const insights = buildGameInsights(playerProfile.traits, gameMotivationProfile);
+      const insights = buildGameInsights(profile.traits, gameMotivationProfile);
 
         renderGameInsights(insights);
     }
@@ -420,6 +424,7 @@ async function initializeGamePage() {
 
     try {
         renderGameHero(game, recommendation);
+        renderGameVerdict(recommendation.score);
         renderWhy(recommendation);
         renderBreakdown(recommendation);
         renderGameProfile(game);
