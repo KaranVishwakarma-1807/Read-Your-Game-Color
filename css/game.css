@@ -1,5 +1,10 @@
 /* Game Detail Page */
 
+:root {
+  --result-color: #a875ff;
+  --result-glow: #a875ff;
+}
+
 .site-header {
   position: relative;
   z-index: 10;
@@ -440,6 +445,38 @@
 
 .game-detail {
   background: var(--page-background, #0a0a0a);
+}
+
+.game-section-empty {
+  grid-column: 1 / -1;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.025);
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.6;
+}
+
+.game-page-state {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 32px 96px;
+}
+
+.game-page-state a {
+  display: inline-flex;
+  padding: 12px 16px;
+  border: 1px solid var(--result-color);
+  border-radius: 10px;
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.game-page-state a:hover,
+.game-page-state a:focus-visible {
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .game-section {

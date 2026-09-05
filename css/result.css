@@ -611,6 +611,12 @@
     display: contents;
 }
 
+/* The renderer groups related cards inside this wrapper. Keeping it out of
+   the layout lets each generated preference card use the section grid. */
+.preference-group-items {
+    display: contents;
+}
+
 .preference-group > .eyebrow {
     grid-column: 1 / -1;
     margin-top: 15px;
@@ -951,6 +957,9 @@
 
 
 .game-card {
+  display: block;
+  color: var(--text-primary);
+  text-decoration: none;
   position: relative;
   overflow: hidden;
   background: var(--surface, #111);

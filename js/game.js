@@ -1,4 +1,4 @@
-const gameId = new URLSearchParams(window.location.search).get("id");
+const gameId = new URLSearchParams(window.location.search).get("id")?.trim();
 
 const gameHeroVisual = document.getElementById("gameHeroVisual");
 const gameTitle = document.getElementById("gameTitle");
@@ -13,6 +13,47 @@ const gameBreakdown = document.getElementById("gameBreakdown");
 const gameProfile = document.getElementById("gameProfile");
 const gameFriction = document.getElementById("gameFriction");
 const frictionSection = document.getElementById("frictionSection");
+
+function applyProfileTheme(profile) {
+    const color = profile?.colors?.primary?.hex;
+
+    if (typeof color === "string" && /^#[0-9a-f]{6}$/i.test(color)) {
+        document.documentElement.style.setProperty("--result-color", color);
+        document.documentElement.style.setProperty("--result-glow", color);
+    }
+}
+
+function showPageState(title, message, actionHref, actionLabel) {
+    document.title = `${title} - Play Your Color`;
+    gameTitle.textContent = title;
+    gameTier.textContent = "GAME DETAIL";
+    gameMatch.textContent = "";
+    gameMatchLabel.textContent = "";
+    gameGenres.textContent = "";
+    gameDescription.textContent = message;
+    gameInitial.textContent = "?";
+    gameHeroVisual.style.backgroundImage = "";
+    gameWhy.innerHTML = "";
+    gameBreakdown.innerHTML = "";
+    gameProfile.innerHTML = "";
+    frictionSection.hidden = true;
+
+    document.querySelectorAll(".game-section").forEach(section => {
+        section.hidden = true;
+    });
+
+    let state = document.getElementById("gamePageState");
+    if (!state) {
+        state = document.createElement("div");
+        state.id = "gamePageState";
+        state.className = "game-page-state";
+        document.querySelector(".game-detail").after(state);
+    }
+
+    state.innerHTML = actionHref && actionLabel
+        ? `<a href="${actionHref}">${actionLabel}</a>`
+        : "";
+}
 
 function loadPlayerProfile() {
     const stored = localStorage.getItem("playYourColorProfile");
@@ -92,7 +133,15 @@ function renderBreakdown(recommendation) {
         ["Progression", breakdown.progression]
     ];
 
-    gameBreakdown.innerHTML = dimensions.filter(([, value]) => typeof value === "number").sort(([, first], [, second]) => second - first).slice(0, 6).map(([label, value]) => createBreakdownCard(label, value)).join("");
+    const cards = dimensions
+        .filter(([, value]) => typeof value === "number")
+        .sort(([, first], [, second]) => second - first)
+        .slice(0, 6)
+        .map(([label, value]) => createBreakdownCard(label, value));
+
+    gameBreakdown.innerHTML = cards.length > 0
+        ? cards.join("")
+        : `<p class="game-section-empty">Your detailed match breakdown will appear after you complete or retake the assessment.</p>`;
 }
 
 function createProfileCard(label, value) {
@@ -182,20 +231,47 @@ function createDNAHighlight(playerTraits, gameProfile) {
 
 async function initializeGamePage() {
     if (!gameId) {
-        window.location.href = "result.html";
+        showPageState(
+            "Choose a game",
+            "Open a game from your results or the Explore Games catalogue to see its details.",
+            "discovery.html",
+            "Explore games"
+        );
         return;
     }
 
     const profile = loadPlayerProfile();
     if (!profile) {
-        window.location.href = "assessment.html";
+        showPageState(
+            "Discover your Gaming DNA first",
+            "Complete the assessment to see this game's personalized match and comparison.",
+            "assessment.html",
+            "Start the assessment"
+        );
         return;
     }
 
+    applyProfileTheme(profile);
+
     const games = await loadGameDatabase();
+    if (games.length === 0) {
+        showPageState(
+            "Games are unavailable right now",
+            "The game catalogue could not be loaded. Please try again in a moment.",
+            "discovery.html",
+            "Back to Explore Games"
+        );
+        return;
+    }
+
     const game = games.find(item => item.id === gameId);
     if (!game) {
-        window.location.href = "result.html";
+        showPageState(
+            "Game not found",
+            "This game may have been removed or the link may be incomplete.",
+            "discovery.html",
+            "Explore games"
+        );
         return;
     }
 
@@ -227,19 +303,29 @@ async function initializeGamePage() {
         tier: getRecommendationTier(match.score)
     };
 
-    renderGameHero(game, recommendation);
-    renderWhy(recommendation);
-    renderBreakdown(recommendation);
-    renderGameProfile(game);
-    renderFriction(recommendation);
+    try {
+        renderGameHero(game, recommendation);
+        renderWhy(recommendation);
+        renderBreakdown(recommendation);
+        renderGameProfile(game);
+        renderFriction(recommendation);
 
-    if (gameMotivationProfile) {
-        const dnaHighlight = document.getElementById("dnaHighlight");
-        if (dnaHighlight) {
-            dnaHighlight.innerHTML = createDNAHighlight(profile.traits, gameMotivationProfile);
+        if (gameMotivationProfile) {
+            const dnaHighlight = document.getElementById("dnaHighlight");
+            if (dnaHighlight) {
+                dnaHighlight.innerHTML = createDNAHighlight(profile.traits, gameMotivationProfile);
+            }
+            renderDNASimilarity(profile.traits, gameMotivationProfile);
+            renderDNAComparison(profile.traits, gameMotivationProfile);
         }
-        renderDNASimilarity(profile.traits, gameMotivationProfile);
-        renderDNAComparison(profile.traits, gameMotivationProfile);
+    } catch (error) {
+        console.error(`Could not render ${game.title}:`, error);
+        showPageState(
+            "We could not display this game",
+            "The game was found, but some of its details could not be displayed.",
+            "discovery.html",
+            "Explore games"
+        );
     }
 }
 
