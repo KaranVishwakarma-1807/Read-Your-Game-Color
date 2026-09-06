@@ -72,6 +72,10 @@ Play Your Color is designed to be:
 
 Recommendations are intended as a discovery guide, not a final verdict. A strong match suggests that a game aligns with the player’s stated preferences; an unexpected match can offer a rewarding new perspective. The best next game is ultimately the one that feels right to the player.
 
+## Asset Attribution
+
+The page icons used in `assets/icons/` were sourced from [Icons8](https://icons8.com/). Their use is subject to the applicable [Icons8 license and attribution requirements](https://icons8.com/license). If these icons are used under Icons8’s free terms, retain the required Icons8 attribution when publishing the project. Game artwork is not covered by this attribution note and will be reviewed separately.
+
 ---
 
 **Play Your Color — Discover Your Gaming DNA.**
