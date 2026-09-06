@@ -859,3 +859,43 @@
   font-size: 14px;
   line-height: 1.6;
 }
+
+
+.favorite-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  width: fit-content;
+  margin-top: 22px;
+  padding: 11px 16px;
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  color: white;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  backdrop-filter: blur(8px);
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.favorite-button:hover {
+  border-color: var(--result-color);
+  transform: translateY(-2px);
+}
+
+.favorite-button.saved {
+  border-color: var(--result-color);
+  background: var(--result-color);
+  color: #111;
+}
+
+#favoriteIcon {
+  font-size: 17px;
+}

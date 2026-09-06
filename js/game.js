@@ -336,6 +336,48 @@ function renderGameVerdict(score) {
 }
 
 
+
+// Favorites
+function renderFavoriteButton(gameId) {
+  const button = document.getElementById("favoriteButton");
+
+  const icon = document.getElementById("favoriteIcon");
+
+  const text = document.getElementById("favoriteText");
+
+  if (!button) {
+    return;
+  }
+
+  const saved = isFavorite(gameId);
+
+  button.classList.toggle("saved", saved);
+
+  icon.textContent = saved ? "★" : "☆";
+
+  text.textContent = saved ? "SAVED" : "SAVE GAME";
+}
+
+
+
+function setupFavoriteButton(gameId) {
+
+  const button = document.getElementById("favoriteButton");
+
+  if (!button) {
+    return;
+  }
+
+  renderFavoriteButton(gameId);
+
+  button.addEventListener("click", () => {
+      toggleFavorite(gameId);
+      renderFavoriteButton(gameId);
+    }
+  );
+}
+
+
 async function initializeGamePage() {
     if (!gameId) {
         showPageState(
@@ -392,7 +434,8 @@ async function initializeGamePage() {
 
       const insights = buildGameInsights(profile.traits, gameMotivationProfile);
 
-        renderGameInsights(insights);
+      renderGameInsights(insights);
+
     }
 
 
@@ -429,6 +472,7 @@ async function initializeGamePage() {
         renderBreakdown(recommendation);
         renderGameProfile(game);
         renderFriction(recommendation);
+        setupFavoriteButton(game.id);
 
         if (gameMotivationProfile) {
             const dnaHighlight = document.getElementById("dnaHighlight");

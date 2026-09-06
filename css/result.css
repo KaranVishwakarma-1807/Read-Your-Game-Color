@@ -23,6 +23,21 @@
     z-index: 5;
 }
 
+.my-games-link {
+    color: var(--text-secondary);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+}
+
+.my-games-link:hover,
+.my-games-link:focus-visible {
+    color: var(--result-color, var(--text-primary));
+}
+
 
 .restart-button {
     border: 1px solid var(--border);

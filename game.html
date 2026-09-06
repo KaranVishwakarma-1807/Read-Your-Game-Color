@@ -7,7 +7,7 @@
     <title>
         Game — Play Your Color
     </title>
-
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/game.css">
 </head>
@@ -25,29 +25,33 @@
             </a>
         </div>
     </header>
-
-
+    
+    
     <!-- Game Hero -->
     <main class="game-detail">
-
+        
         <!-- Hero -->
         <section class="game-hero">
             <div class="game-hero-visual" id="gameHeroVisual">
-            <div class="game-hero-overlay"></div>
-            <div class="game-initial" id="gameInitial">
-                G
+                <div class="game-hero-overlay"></div>
+                <div class="game-initial" id="gameInitial">
+                    G
+                </div>
             </div>
-            </div>
-
+            
             <div class="game-hero-content">
-            <div class="game-tier" id="gameTier">
-                YOUR BEST MATCH
-            </div>
-            <h1 id="gameTitle">
-                Loading game…
-            </h1>
-            <div class="game-match-row">
-                <div class="game-match" id="gameMatch">
+                <div class="game-tier" id="gameTier">
+                    YOUR BEST MATCH
+                </div>
+                <h1 id="gameTitle">
+                    Loading game…
+                </h1>
+                <button id="favoriteButton" class="favorite-button" type="button">
+                    <span id="favoriteIcon">☆</span>
+                    <span id="favoriteText">SAVE GAME</span>
+                </button>
+                <div class="game-match-row">
+                    <div class="game-match" id="gameMatch">
                     94%
                 </div>
                 <div class="game-match-label" id="gameMatchLabel">
@@ -166,7 +170,8 @@
     <script src="js/format-utils.js"></script>
 
     <script src="js/dna-utils.js"></script>
-    <script src="js/game.js"></script>
+    <script src="js/favorites.js"></script>
+    <script src="js/game.js?v=20260906"></script>
 
 </body>
 
