@@ -74,7 +74,22 @@ Recommendations are intended as a discovery guide, not a final verdict. A strong
 
 ## Asset Attribution
 
-The page icons used in `assets/icons/` were sourced from [Icons8](https://icons8.com/). Their use is subject to the applicable [Icons8 license and attribution requirements](https://icons8.com/license). If these icons are used under Icons8’s free terms, retain the required Icons8 attribution when publishing the project. Game artwork is not covered by this attribution note and will be reviewed separately.
+The page icons used in `assets/icons/` were sourced from [Icons8](https://icons8.com/). Their use is subject to the applicable [Icons8 license and attribution requirements](https://icons8.com/license). These icons are used under Icons8’s free terms. Game artwork is not covered by this attribution note and will be reviewed separately.
+
+### Music
+
+Music tracks are from [Bensound](https://www.bensound.com/free-music-for-videos). The provided license codes are recorded below for attribution and license reference.
+
+| Track | Used on | Artist | License code |
+| --- | --- | --- | --- |
+| Slow Life | Game Details | Benjamin Lazzarus | `IFLDAZBQTVP77QAM` |
+| Moonlight Drive | My Games | Yunior Arronte | `N3LKG2NF3P619MDI` |
+| Scream Villain | Results | The Fable | `NDJJJEV4CB219AM0` |
+| Memories | Home | Benjamin Tissot | `JNPC6DIMNOT7WWSB` |
+| SCI FI | Assessment | Benjamin Tissot | `VFF7DJWWCIWDB6D2` |
+| The Lounge | Discover Games | Benjamin Tissot | `NWBCWPC5BBTDQGU8` |
+| Funky Element | Assessment | Benjamin Tissot | `LS3ZOSOILIFVZLTT` |
+| New Dawn | Home, Game Details, Assessment | Benjamin Tissot | `943PJWFTSAPFECQR` |
 
 ---
 
