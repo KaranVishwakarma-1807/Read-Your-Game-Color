@@ -4,8 +4,9 @@ const startButton = document.getElementById("startButton");
 
 
 startButton.addEventListener("click", function () {
-
-
-    window.location.href = "assessment.html";
-
+    if (typeof window.navigateWithMusicFade === "function") {
+        window.navigateWithMusicFade("assessment.html");
+    } else {
+        window.location.href = "assessment.html";
+    }
 });

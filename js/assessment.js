@@ -499,7 +499,11 @@ function finishAssessment() {
     localStorage.removeItem("playYourColorAssessmentState");
 
     /* Go to result page.*/
-    window.location.href = "result.html";
+    if (typeof window.navigateWithMusicFade === "function") {
+        window.navigateWithMusicFade("result.html");
+    } else {
+        window.location.href = "result.html";
+    }
 }
 
 
