@@ -214,11 +214,7 @@ function displaySurpriseRecommendations(fallbackRecommendations = []) {
 restartButton.addEventListener("click", () => {
     localStorage.removeItem("playYourColorProfile");
     localStorage.removeItem("playYourColorAssessmentState");
-    if (typeof window.navigateWithMusicFade === "function") {
-        window.navigateWithMusicFade("assessment.html");
-    } else {
-        window.location.href = "assessment.html";
-    }
+    window.location.href = "assessment.html";
 });
 
 async function initializeResultPage() {

@@ -24,7 +24,6 @@ const PAGE_MUSIC = {
 };
 
 const MUSIC_SESSION_STATE_KEY = "playYourColorMusicSessionState";
-const MUSIC_FADE_DURATION = 500;
 const MUSIC_TARGET_VOLUME = 0.35;
 
 function initializeMusicPlayer() {
@@ -46,7 +45,7 @@ function initializeMusicPlayer() {
     const audio = new Audio(track.src);
     audio.loop = true;
     audio.preload = "none";
-    audio.volume = 0;
+    audio.volume = MUSIC_TARGET_VOLUME;
 
     const button = document.createElement("button");
     button.className = "music-toggle";
@@ -64,83 +63,13 @@ function initializeMusicPlayer() {
 
     const label = button.querySelector(".music-toggle-label");
     let interactionRetryAttached = false;
-    let navigationPending = false;
 
-    function fadeAudioTo(targetVolume, duration) {
-        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || duration <= 0) {
-            audio.volume = targetVolume;
-            return Promise.resolve();
-        }
-
-        const startVolume = audio.volume;
-        const startTime = performance.now();
-
-        return new Promise(resolve => {
-            function step(now) {
-                const progress = Math.min((now - startTime) / duration, 1);
-                audio.volume = startVolume + (targetVolume - startVolume) * progress;
-
-                if (progress < 1) {
-                    requestAnimationFrame(step);
-                } else {
-                    resolve();
-                }
-            }
-
-            requestAnimationFrame(step);
-        });
-    }
-
-    async function navigateWithMusicFade(destination) {
-        if (navigationPending) {
-            return;
-        }
-
-        navigationPending = true;
-
-        if (audio.paused || sessionStorage.getItem(MUSIC_SESSION_STATE_KEY) === "paused") {
-            window.location.assign(destination);
-            return;
-        }
-
-        await fadeAudioTo(0, MUSIC_FADE_DURATION);
-        window.location.assign(destination);
-    }
-
-    window.navigateWithMusicFade = navigateWithMusicFade;
-
-    document.addEventListener("click", event => {
-        if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
-            return;
-        }
-
-        const anchor = event.target.closest?.("a[href]");
-        if (!anchor || anchor.hasAttribute("download") || (anchor.target && anchor.target !== "_self")) {
-            return;
-        }
-
-        const destination = new URL(anchor.href, window.location.href);
-        if (destination.origin !== window.location.origin) {
-            return;
-        }
-
-        if (
-            destination.pathname === window.location.pathname &&
-            destination.search === window.location.search &&
-            destination.hash
-        ) {
-            return;
-        }
-
-        event.preventDefault();
-        navigateWithMusicFade(destination.href);
-    }, true);
-
-    function updateButton(isPlaying) {
+    function updateButton(isPlaying, idleAction = "play") {
         button.classList.toggle("is-playing", isPlaying);
         button.classList.remove("has-error");
         button.setAttribute("aria-pressed", String(isPlaying));
-        button.setAttribute("aria-label", `${isPlaying ? "Pause" : "Play"} ${track.title}`);
+        const action = isPlaying ? "Pause" : idleAction === "resume" ? "Resume" : "Play";
+        button.setAttribute("aria-label", `${action} ${track.title}`);
         label.textContent = track.title;
     }
 
@@ -152,7 +81,8 @@ function initializeMusicPlayer() {
         if (window.location.protocol === "file:") {
             message = "Open via local server to play music";
         } else if (error.name === "NotAllowedError") {
-            message = `Tap to play ${track.title}`;
+            const action = sessionStorage.getItem(MUSIC_SESSION_STATE_KEY) === "playing" ? "resume" : "play";
+            message = `Tap to ${action} ${track.title}`;
         } else {
             message = "Music unavailable";
         }
@@ -175,6 +105,7 @@ function initializeMusicPlayer() {
             return;
         }
 
+        sessionStorage.setItem(MUSIC_SESSION_STATE_KEY, "playing");
         startPlayback(true);
     }
 
@@ -195,8 +126,8 @@ function initializeMusicPlayer() {
 
         try {
             await audio.play();
+            sessionStorage.setItem(MUSIC_SESSION_STATE_KEY, "playing");
             updateButton(true);
-            await fadeAudioTo(MUSIC_TARGET_VOLUME, MUSIC_FADE_DURATION);
         }
         catch (error) {
             showPlaybackError(error);
@@ -207,7 +138,7 @@ function initializeMusicPlayer() {
         if (!audio.paused) {
             audio.pause();
             sessionStorage.setItem(MUSIC_SESSION_STATE_KEY, "paused");
-            updateButton(false);
+            updateButton(false, "resume");
             return;
         }
 
@@ -220,7 +151,7 @@ function initializeMusicPlayer() {
     if (sessionStorage.getItem(MUSIC_SESSION_STATE_KEY) !== "paused") {
         startPlayback();
     } else {
-        updateButton(false);
+        updateButton(false, "resume");
     }
 }
 
