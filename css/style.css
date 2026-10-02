@@ -146,11 +146,27 @@ h3 {
   text-transform: uppercase;
 }
 
-.music-toggle {
+.music-controls {
   position: fixed;
   right: max(16px, env(safe-area-inset-right));
   bottom: max(16px, env(safe-area-inset-bottom));
   z-index: 1000;
+  width: 48px;
+  height: 48px;
+  --music-capsule-width: 196px;
+  --music-menu-offset: 204px;
+}
+
+.music-controls.has-error {
+  --music-capsule-width: 290px;
+  --music-menu-offset: 298px;
+}
+
+.music-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
@@ -183,9 +199,10 @@ h3 {
   border-color: var(--result-color, var(--purple));
 }
 
-.music-toggle:hover,
-.music-toggle:focus-visible {
-  width: 196px;
+.music-controls:hover .music-toggle,
+.music-controls:focus-within .music-toggle,
+.music-controls.is-expanded .music-toggle {
+  width: var(--music-capsule-width);
   gap: 10px;
   transform: translateY(-2px);
 }
@@ -239,41 +256,220 @@ h3 {
   transition-delay: 0s;
 }
 
-.music-toggle:hover .music-toggle-label,
-.music-toggle:focus-visible .music-toggle-label {
+.music-controls:hover .music-toggle-label,
+.music-controls:focus-within .music-toggle-label,
+.music-controls.is-expanded .music-toggle-label {
   max-width: 142px;
   opacity: 1;
 }
 
-.music-toggle.has-error:hover,
-.music-toggle.has-error:focus-visible {
-  width: 290px;
+.music-controls.has-error .music-toggle-label {
+  max-width: 236px;
 }
 
-.music-toggle.has-error:hover .music-toggle-label,
-.music-toggle.has-error:focus-visible .music-toggle-label {
-  max-width: 236px;
+.music-menu-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: grid;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  align-content: center;
+  justify-items: center;
+  gap: 4px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: rgba(17, 17, 19, 0.94);
+  color: var(--text-primary);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(0) scale(0.55);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+  transition:
+    border-color 0.2s ease,
+    transform 0.28s cubic-bezier(0.2, 0.75, 0.25, 1),
+    opacity 0.18s ease,
+    visibility 0s linear 0.28s,
+    background 0.2s ease;
+}
+
+.music-controls:hover .music-menu-toggle,
+.music-controls:focus-within .music-menu-toggle,
+.music-controls.is-expanded .music-menu-toggle {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(calc(0px - var(--music-menu-offset))) scale(1);
+  transition-delay: 0s;
+}
+
+.music-menu-toggle:hover,
+.music-menu-toggle:focus-visible,
+.music-controls.menu-open .music-menu-toggle {
+  border-color: var(--result-color, var(--purple));
+}
+
+.music-menu-toggle:hover {
+  filter: brightness(1.15);
+}
+
+.music-menu-toggle:focus-visible {
+  outline: 2px solid var(--result-color, var(--purple));
+  outline-offset: 3px;
+}
+
+.music-menu-toggle span {
+  width: 16px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.music-controls.menu-open .music-menu-toggle span:first-child {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.music-controls.menu-open .music-menu-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.music-controls.menu-open .music-menu-toggle span:last-child {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.music-track-menu {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 12px);
+  width: min(300px, calc(100vw - 24px));
+  max-height: min(420px, 65vh);
+  overflow-y: auto;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(17, 17, 19, 0.97);
+  box-shadow: 0 14px 42px rgba(0, 0, 0, 0.48);
+  backdrop-filter: blur(16px);
+  transform-origin: bottom right;
+  animation: music-menu-enter 0.2s ease-out both;
+}
+
+.music-track-menu[hidden] {
+  display: none;
+}
+
+@keyframes music-menu-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.music-track-menu-heading {
+  margin: 0 0 8px;
+  padding: 4px 8px 9px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.music-track-list {
+  display: grid;
+  gap: 4px;
+}
+
+.music-track-option {
+  display: flex;
+  width: 100%;
+  min-height: 42px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-secondary);
+  font: 600 13px "DM Sans", sans-serif;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.music-track-option:hover,
+.music-track-option:focus-visible {
+  border-color: var(--border);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-primary);
+}
+
+.music-track-option[aria-pressed="true"] {
+  border-color: var(--result-color, var(--purple));
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--text-primary);
+}
+
+.music-track-option-check {
+  color: var(--result-color, var(--purple));
+  opacity: 0;
+}
+
+.music-track-option[aria-pressed="true"] .music-track-option-check {
+  opacity: 1;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .music-toggle,
-  .music-toggle-label {
+  .music-toggle-label,
+  .music-menu-toggle,
+  .music-menu-toggle span,
+  .music-track-menu,
+  .music-track-option {
     transition: none;
+    animation: none;
   }
 }
 
 @media (max-width: 600px) {
-  .music-toggle {
+  .music-controls {
     right: max(12px, env(safe-area-inset-right));
     bottom: max(12px, env(safe-area-inset-bottom));
+  }
+
+  .music-controls.has-error {
+    --music-capsule-width: min(240px, calc(100vw - 80px));
+    --music-menu-offset: calc(var(--music-capsule-width) + 8px);
+  }
+
+  .music-toggle {
     width: 46px;
     height: 46px;
     padding: 0 11px;
   }
 
-  .music-toggle:hover,
-  .music-toggle:focus-visible {
-    width: min(196px, calc(100vw - 24px));
+  .music-menu-toggle {
+    top: 1px;
+    flex-basis: 46px;
+    width: 46px;
+    height: 46px;
+  }
+
+  .music-track-menu {
+    width: min(300px, calc(100vw - 48px));
   }
 }
 
