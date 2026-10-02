@@ -21,28 +21,28 @@
     >
 
     <!-- Global CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=20261002-navbar">
 
     <!-- Result CSS -->
-    <link rel="stylesheet" href="css/result.css">
+    <link rel="stylesheet" href="css/result.css?v=20261002-navbar">
 </head>
 
 
 <body class="result-page">
 
     <!-- Navigation -->
-    <header class="result-header">
+    <header class="navbar site-navbar">
         <a href="index.html" class="logo">
             PLAY<span>YOUR</span>COLOR
         </a>
 
-        <a href="my-games.html" class="my-games-link">
-            MY GAMES
-        </a>
-
-        <button id="restartButton" class="restart-button" type="button">
-            Retake Assessment
-        </button>
+        <nav class="site-nav-actions" aria-label="Site navigation">
+            <a href="my-games.html" class="site-nav-link">My Games</a>
+            <a href="discovery.html" class="site-nav-link">Explore Games</a>
+            <button id="restartButton" class="restart-button" type="button">
+                Retake Assessment
+            </button>
+        </nav>
     </header>
 
 
@@ -361,6 +361,7 @@
     <script src="js/game-profile.js"></script>
     <script src="js/games-loader.js"></script>  
 
+    <script src="js/preference-utils.js?v=20261002.1"></script>
     <script src="js/preference-engine.js"></script>
     <script src="js/constraint-engine.js"></script>
 

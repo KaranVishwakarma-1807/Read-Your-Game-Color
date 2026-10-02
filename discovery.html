@@ -10,22 +10,20 @@
   <meta name="theme-color" content="#09090b">
   <link rel="icon" type="image/png" href="assets/icons/discovery.png">
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/discovery.css">
+  <link rel="stylesheet" href="css/style.css?v=20261002-navbar">
+  <link rel="stylesheet" href="css/discovery.css?v=20261002-navbar">
 </head>
 
 <body>
 
-  <header class="discovery-header">
-    <a href="index.html" class="brand">
-      PLAY YOUR COLOR
+  <header class="navbar site-navbar">
+    <a href="index.html" class="logo">
+      PLAY<span>YOUR</span>COLOR
     </a>
-    <a href="my-games.html" class="my-games-link">
-      MY GAMES
-    </a>
-    <a href="result.html" class="results-link">
-      YOUR RESULTS →
-    </a>
+    <nav class="site-nav-actions" aria-label="Site navigation">
+      <a href="my-games.html" class="site-nav-link">My Games</a>
+      <a href="result.html" class="site-nav-link">Your Results</a>
+    </nav>
   </header>
 
 
@@ -94,6 +92,7 @@
   <script src="js/game-rubric.js"></script>
   <script src="js/game-profile.js"></script>
   <script src="js/games-loader.js"></script>
+  <script src="js/preference-utils.js?v=20261002.1"></script>
   <script src="js/preference-engine.js"></script>
   <script src="js/constraint-engine.js"></script>
   <script src="js/recommendation-engine.js"></script>

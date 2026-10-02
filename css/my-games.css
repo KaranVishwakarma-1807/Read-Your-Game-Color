@@ -2,33 +2,6 @@
   --result-color: #a855f7;
 }
 
-.my-games-header .brand,
-.my-games-header .back-link {
-  color: var(--text-primary);
-  text-decoration: none;
-}
-
-.my-games-header .brand {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-
-.my-games-header .back-link {
-  color: var(--text-secondary);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-}
-
-.my-games-header .brand:hover,
-.my-games-header .brand:focus-visible,
-.my-games-header .back-link:hover,
-.my-games-header .back-link:focus-visible {
-  color: var(--result-color);
-}
-
 .my-games-intro .section-eyebrow,
 .compare-section .section-eyebrow {
   display: block;
@@ -38,16 +11,6 @@
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-}
-
-.my-games-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 40px;
-  border-bottom:
-    1px solid
-    rgba(255, 255, 255, 0.08);
 }
 
 .my-games-page {
@@ -308,9 +271,6 @@
 }
 
 @media (max-width: 600px) {
-  .my-games-header {
-    padding: 20px;
-  }
   .my-games-page {
     padding: 55px 20px 90px;
   }

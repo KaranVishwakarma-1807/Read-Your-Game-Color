@@ -10,22 +10,21 @@
     <meta name="theme-color" content="#09090b">
     <link rel="icon" type="image/png" href="assets/icons/games.png">
     
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/style.css?v=20261002-navbar">
+    <link rel="stylesheet" href="css/game.css?v=20261002-navbar">
 </head>
 
 
 <body class="game-page">
     <!-- Navigation -->
-    <header class="site-header">
-        <div class="site-header-inner">
-            <a href="index.html" class="site-logo">
-                PLAY YOUR COLOR
-            </a>
-            <a href="result.html" class="header-link">
-                Your Results
-            </a>
-        </div>
+    <header class="navbar site-navbar">
+        <a href="index.html" class="logo">
+            PLAY<span>YOUR</span>COLOR
+        </a>
+        <nav class="site-nav-actions" aria-label="Site navigation">
+            <a href="discovery.html" class="site-nav-link">Explore Games</a>
+            <a href="result.html" class="site-nav-link">Your Results</a>
+        </nav>
     </header>
     
     
@@ -162,6 +161,7 @@
     <script src="js/game-profile.js"></script>
     <script src="js/games-loader.js"></script>
     
+    <script src="js/preference-utils.js?v=20261002.1"></script>
     <script src="js/preference-engine.js"></script>
     <script src="js/constraint-engine.js"></script>
     <script src="js/recommendation-engine.js"></script>

@@ -10,16 +10,6 @@
     var(--background);
 }
 
-.assessment-header {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 28px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .question-counter {
   display: flex;
   align-items: center;
@@ -161,10 +151,6 @@
 }
 
 @media (max-width: 600px) {
-  .assessment-header {
-    padding: 20px 18px;
-  }
-
   .assessment-main {
     padding: 20px 18px 60px;
   }

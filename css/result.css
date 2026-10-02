@@ -10,35 +10,6 @@
 }
 
 
-/* Header */
-.result-header {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 28px 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 5;
-}
-
-.my-games-link {
-    color: var(--text-secondary);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: color 0.2s ease;
-}
-
-.my-games-link:hover,
-.my-games-link:focus-visible {
-    color: var(--result-color, var(--text-primary));
-}
-
-
 .restart-button {
     border: 1px solid var(--border);
     border-radius: 10px;
@@ -347,10 +318,6 @@
 
 /* Mobile */
 @media (max-width: 700px) {
-    .result-header {
-        padding:20px 18px;
-    }
-
     .restart-button {
         padding:9px 12px;
     }
