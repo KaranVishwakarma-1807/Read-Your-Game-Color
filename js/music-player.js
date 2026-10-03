@@ -61,6 +61,9 @@ function initializeMusicPlayer() {
             <img class="music-toggle-icon music-toggle-play-icon" src="${playIconSrc}" alt="">
             <img class="music-toggle-icon music-toggle-pause-icon" src="${pauseIconSrc}" alt="">
         </span>
+        <span class="music-frequency-rail" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+        </span>
         <span class="music-toggle-label">${track.title}</span>
     `;
 
@@ -90,8 +93,14 @@ function initializeMusicPlayer() {
 
     const menuHeading = document.createElement("h2");
     menuHeading.className = "music-track-menu-heading";
-    menuHeading.textContent = "Choose a track";
+    menuHeading.textContent = "Music Library";
     menu.appendChild(menuHeading);
+
+    const currentTrackLabel = document.createElement("p");
+    currentTrackLabel.className = "music-current-track";
+    currentTrackLabel.innerHTML = `<span>NOW PLAYING</span><strong></strong>`;
+    currentTrackLabel.querySelector("strong").textContent = track.title;
+    menu.appendChild(currentTrackLabel);
 
     const trackList = document.createElement("div");
     trackList.className = "music-track-list";
@@ -152,6 +161,7 @@ function initializeMusicPlayer() {
             audio.pause();
             audio.src = track.src;
             audio.load();
+            currentTrackLabel.querySelector("strong").textContent = track.title;
             updateButton(true);
             updateTrackChoices();
             setTrackMenuOpen(false);
@@ -179,6 +189,7 @@ function initializeMusicPlayer() {
 
     function updateButton(isPlaying, idleAction = "play") {
         button.classList.toggle("is-playing", isPlaying);
+        controls.classList.toggle("is-playing", isPlaying);
         button.classList.remove("has-error");
         controls.classList.remove("has-error");
         button.setAttribute("aria-pressed", String(isPlaying));
